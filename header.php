@@ -7,10 +7,10 @@
     </div>
 
     <div class="large-12 cell">
-        <a href="/" class="button small menu-button">ABOUT</a>
-        <a href="/books" class="button small menu-button">BOOKS</a>
-        <a href="" class="button small menu-button">MUSIC</a>
-        <a href="" class="button small menu-button">PODCASTS</a>
+        <a href="/" class="button menu-button">ABOUT</a>
+        <a href="/books" class="button menu-button">BOOKS</a>
+        <a href="/audio" class="button menu-button">AUDIO</a>
+        <a href="/blog" class="button menu-button">BLOG</a>
         <div class="hr">&nbsp;</div>
     </div>
 

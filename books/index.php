@@ -86,7 +86,6 @@ if (file_exists('../data/books.xml')) {
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-    <script src="js/app4.js"></script>
 </body>
 
 </html>

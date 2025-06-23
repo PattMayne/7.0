@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<audio>
+
+    <albums>
+
+        <album>
+            <title>The Wicked Geometer</title>
+            <image_filename>geom.png</image_filename>
+            <description>A prog-industrial musical triumph.</description>
+            <link_url>https://pattmayne.bandcamp.com/album/the-wicked-geometer</link_url>
+            <link_text>Bandcamp</link_text>
+        </album>
+
+        <album>
+            <title>Old Gods</title>
+            <image_filename>gods.png</image_filename>
+            <description>The coolest electronic music since Lizst.</description>
+            <link_url>https://pattmayne.bandcamp.com/album/old-gods</link_url>
+            <link_text>Bandcamp</link_text>
+        </album>
+
+    </albums>
+
+    <podcasts>
+
+        <podcast>
+            <title>The Righteous Podcast of Truth</title>
+            <description>Scripted comedy podcast. Fictional stories and nonsense.</description>
+            <link_url>https://the-righteous-podcast-of-truth.pinecast.co/</link_url>
+            <link_text>Links</link_text>
+        </podcast>
+
+        <podcast>
+            <title>The Robot God Cast</title>
+            <description>Interviews about technology. I think we worship technology and the future. I used to try to talk to people about it, but then I had to get a real job.</description>
+            <link_url>https://www.youtube.com/watch?v=Cj8UMWGnWqw&amp;list=PL9Q6kzTdCn4ZwqHWjaCeQEsKsGuymEw8g&amp;index=2</link_url>
+            <link_text>YouTube</link_text>
+        </podcast>
+
+    </podcasts>
+
+
+</audio>
+
+<!-- 
+    EXAMPLES
+
+
+    <podcast>
+        <title>REPLACE</title>
+        <description>REPLACE</description>
+        <link_url>REPLACE</link_url>
+        <link_text>REPLACE</link_text>
+    </podcast>
+
+    <album>
+        <title>REPLACE</title>
+        <image_filename>REPLACE</image_filename>
+        <description>REPLACE</description>
+        <link_url>REPLACE</link_url>
+        <link_text>REPLACE</link_text>
+    </album>
+
+
+-->
