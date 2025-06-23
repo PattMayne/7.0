@@ -26,6 +26,10 @@
                 <text>Amazon (CA)</text>
                 <url>https://www.amazon.ca/Millenarianistic-Chronodyke-Political-Johannes-Paine/dp/1775083535/</url>
             </link>
+            <link>
+                <text>D2D E-book</text>
+                <url>https://draft2digital.com/book/1438135</url>
+            </link>
         </links>
     </book>
 
@@ -43,6 +47,10 @@
                 <text>Amazon (CA)</text>
                 <url>https://www.amazon.ca/Sick-Book-Lies-gruesome-grimoire/dp/1494328224/</url>
             </link>
+            <link>
+                <text>D2D E-book</text>
+                <url>https://draft2digital.com/book/1438074</url>
+            </link>
         </links>
     </book>
 
@@ -59,6 +67,35 @@
             <link>
                 <text>Amazon (CA)</text>
                 <url>https://www.amazon.ca/Adventure-Poem-Julius-Cinnamon/dp/1775083500/</url>
+            </link>
+
+            <link>
+                <text>D2D E-book</text>
+                <url>https://draft2digital.com/book/1438124</url>
+            </link>
+        </links>
+    </book>
+
+    <book>
+        <title>The Righteous Book of Truth</title>
+        <image_filename>truth.jpg</image_filename>
+        <description>Six Spectacular Shorts. Tales of paranoia and visions of glory.</description>
+        <links>
+            <link>
+                <text>D2D E-book</text>
+                <url>https://draft2digital.com/book/1438143</url>
+            </link>
+        </links>
+    </book>
+
+    <book>
+        <title>Microcalypse</title>
+        <image_filename>micro.png</image_filename>
+        <description>Paranoid blogger Larry Grank gets entangled in a reality-bending labyrinth of intelligent microbes seeking to rule the world. Will he become a vector of disease?</description>
+        <links>
+            <link>
+                <text>D2D E-book</text>
+                <url>https://draft2digital.com/book/1438130</url>
             </link>
         </links>
     </book>
