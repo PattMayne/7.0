@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <title>
+            Terranomicon
+        </title>
+        <image>
+            terrapromocover.png
+        </image>
+        <description>
+            Cosmic cyberpunk action-adventure. Michael and Forest declare a fight to the death which turns into a species-changing arms-race, while Alonso tries to change humanity for the better. EXPLORING TECHNOLOGY, VIOLENCE, AND HUMAN STRIVING.
+        </description>
+        <links>
+            <link>
+                <text>Paperback / E-Book / Audio</text>
+                <url>https://www.terranomicon.com</url>
+            </link>
+        </links>
+    </book>
+</books>
