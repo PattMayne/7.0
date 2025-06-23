@@ -231,8 +231,7 @@
 
         </div>
     </div>
-    </div>
-    </div>
+
 
     <!-- END OF MAIN CONTENT BOX -->
 

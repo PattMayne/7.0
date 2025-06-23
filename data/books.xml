@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <books>
+
     <book>
-        <title>
-            Terranomicon
-        </title>
-        <image>
-            terrapromocover.png
-        </image>
-        <description>
-            Cosmic cyberpunk action-adventure. Michael and Forest declare a fight to the death which turns into a species-changing arms-race, while Alonso tries to change humanity for the better. EXPLORING TECHNOLOGY, VIOLENCE, AND HUMAN STRIVING.
-        </description>
+        <title>Terranomicon</title>
+        <image_filename>terrapromocover.png</image_filename>
+        <description>Cosmic cyberpunk action-adventure. Michael and Forest declare a fight to the death which turns into a species-changing arms-race, while Alonso tries to change humanity for the better. EXPLORING TECHNOLOGY, VIOLENCE, AND HUMAN STRIVING.</description>
         <links>
             <link>
                 <text>Paperback / E-Book / Audio</text>
@@ -17,4 +12,73 @@
             </link>
         </links>
     </book>
+
+    <book>
+        <title>Millenarianistic Chronodyke</title>
+        <image_filename>chrono.png</image_filename>
+        <description>Literally the funniest book ever written. Only high-IQ geniuses will even understand this multi-plot political epic.</description>
+        <links>
+            <link>
+                <text>Amazon (US)</text>
+                <url>https://www.amazon.com/Millenarianistic-Chronodyke-Political-Johannes-Paine/dp/1775083535/</url>
+            </link>
+            <link>
+                <text>Amazon (CA)</text>
+                <url>https://www.amazon.ca/Millenarianistic-Chronodyke-Political-Johannes-Paine/dp/1775083535/</url>
+            </link>
+        </links>
+    </book>
+
+    <book>
+        <title>The Sick Book of Lies</title>
+        <image_filename>lies.jpg</image_filename>
+        <description>A gruesome grimoire full of good advice and ancient secrets.</description>
+        <links>
+            <link>
+                <text>Amazon (US)</text>
+                <url>https://www.amazon.com/Sick-Book-Lies-gruesome-grimoire/dp/1494328224/</url>
+            </link>
+
+            <link>
+                <text>Amazon (CA)</text>
+                <url>https://www.amazon.ca/Sick-Book-Lies-gruesome-grimoire/dp/1494328224/</url>
+            </link>
+        </links>
+    </book>
+
+    <book>
+        <title>The Adventure Poem of Julius Cinnamon</title>
+        <image_filename>poem.jpg</image_filename>
+        <description>A non-stop action-adventure novel, written in first-person, present-tense. So you live every moment of violence, betrayal, and glory.</description>
+        <links>
+            <link>
+                <text>Amazon (US)</text>
+                <url>https://www.amazon.com/Adventure-Poem-Julius-Cinnamon/dp/1775083500/</url>
+            </link>
+
+            <link>
+                <text>Amazon (CA)</text>
+                <url>https://www.amazon.ca/Adventure-Poem-Julius-Cinnamon/dp/1775083500/</url>
+            </link>
+        </links>
+    </book>
+
 </books>
+
+
+<!--
+<example>
+    <book>
+        <title>REPLACE</title>
+        <image_filename>REPLACE</image_filename>
+        <description>REPLACE</description>
+        <links>
+            <link>
+                <text>REPLACE</text>
+                <url>REPLACE</url>
+            </link>
+        </links>
+    </book>
+</example>
+
+-->
