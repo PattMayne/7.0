@@ -66,6 +66,8 @@
                         <h3 class="section-title-text">BOOKS</h3>
                     </div>
 
+                    <!-- read XML, loop through books, include each one HERE -->
+
                     <div class="large-12 cell">
                         <div class="callout primary">
                             <div class="book-container">
