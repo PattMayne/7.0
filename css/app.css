@@ -13,7 +13,10 @@
     src: url(../fonts/alte-haas-grotesk.bold.ttf);
 }
 
-
+@font-face {
+    font-family: alte;
+    src: url(../fonts/alte-haas-grotesk.regular.ttf);
+}
 
 
 /*    HTML elements  */
@@ -49,6 +52,9 @@ input {
         sans-serif;
 }
 
+article {
+    padding: 10px;
+}
 
 /*     FOUNDATION overrides     */
 
@@ -391,15 +397,13 @@ input {
 
 /* BLOG ARTICLE STYLING */
 
-  .article {
-    margin: 0 auto;
+  .article, .article p {
     font-family: Arial, sans-serif;
+    font-size: x-large;
   }
 
-  .half-image {
-    float: left; /* or right, depending on your layout */
-    width: 50%; /* take up half the container's width */
-    margin-right: 15px; /* some space between image and text */
+  #article_container {
+    padding: 10px;
   }
 
   /* Optional: clear floats after the paragraph if needed */
