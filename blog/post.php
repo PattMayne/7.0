@@ -32,7 +32,7 @@ $article_body = $doc->saveHTML($article_element); // get the raw HTML of the art
     <title><?php echo $article_title; ?></title>
     <link rel="icon" href="../img/guy_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/foundation.css">
-    <link rel="stylesheet" href="../../css/app.css">
+    <link rel="stylesheet" href="../../css/app.css?ts=<?=time()?>">
 </head>
 
 <body>
