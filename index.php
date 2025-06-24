@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
+<?php $page = 'about'; ?>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="pragma" content="no-cache" />
@@ -23,14 +25,14 @@
 
             <div class="large-4 -medium-6 small-12 cell" id="about_box">
 
-                <h3 class="content_title hide-for-small-only">About</h3>
+                <h3 class="content_title">About</h3>
 
 
                 <div class="grid-x grid-padding-x">
 
 
                     <div class="large-12 cell">
-                        <h3 class="section-title-text hide-for-medium-only hide-for-small-only">ABOUT</h3>
+                        <h3 class="section-title-text">ABOUT</h3>
                         <img src="img/matt-2.png" id="profile-pic">
                     </div>
 

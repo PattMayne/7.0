@@ -3,10 +3,10 @@
 <div class="large-4 medium-6 small-12 cell">
     <div class="callout book_callout">
         <div class="book-container">
-            <img src="img/<?php echo $image_filename;?>" class="book-img" />
+            <img src="img/<?php echo $image_filename; ?>" class="book-img" />
             <div class="book-details">
-                <h6 class="book-title"><?php echo $title;?></h6>
-                <p><?php echo $description;?></p>
+                <h6 class="book-title"><?php echo $title; ?></h6>
+                <p><?php echo $description; ?></p>
             </div>
         </div>
 

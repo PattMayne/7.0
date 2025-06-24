@@ -1,6 +1,6 @@
 <!-- We trust that the global variables are filled and valid in the calling script. -->
 
-<div class="callout book_callout">
+<div class="callout primary">
     <div class="music-container">
         <img src="img/<?php echo $album_image_filename;?>" class="music-img" />
         <div class="music-details">

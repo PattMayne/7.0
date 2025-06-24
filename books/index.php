@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
+<?php $page = 'books'; ?>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="pragma" content="no-cache" />
