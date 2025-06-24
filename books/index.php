@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pattmayne.com 7.0 BOOKS</title>
     <link rel="icon" href="img/guy_icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="../css/app.css">
 </head>
 
 <body>
@@ -85,9 +85,9 @@ if (file_exists('../data/books.xml')) {
 
     <!-- END OF FOOTER -->
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/what-input.js"></script>
+    <script src="../js/vendor/foundation.js"></script>
 </body>
 
 </html>
