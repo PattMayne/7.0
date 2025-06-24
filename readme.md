@@ -1,7 +1,3 @@
 **README**
 
-**TODO:**
-
-* make blog page
-* make post page (uses ?query)
-* naming convention for posts
+My simple site for showcasing books and audio, plus links to wherever else I live online.

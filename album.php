@@ -2,7 +2,7 @@
 
 <div class="callout primary">
     <div class="music-container">
-        <img src="img/<?php echo $album_image_filename;?>" class="music-img" />
+        <img src="../img/<?php echo $album_image_filename;?>" class="music-img" />
         <div class="music-details">
             <h6><?php echo $album_title;?></h6>
             <p><?php echo $album_description;?></p>
