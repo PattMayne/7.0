@@ -20,7 +20,7 @@
 
         <!-- The grid for ALL items. -->
         <div class="grid-x grid-padding-x">
-
+            
             <!-- Put all albums in this column. Close after the XML-reading loop. -->
             <div class="large-4 medium-6 small-12 cell">
                 <h3 class="section-title-text">MUSIC</h3>

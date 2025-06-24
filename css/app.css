@@ -117,7 +117,10 @@ input {
 
 .active {
     color: #e90000;
-    border-bottom: 1px solid #111;
+
+    @media (max-width: 640px) {
+        border: 1px solid #111;
+    }
 }
 
 .bold-text {
@@ -385,3 +388,23 @@ input {
 #fuckbutton{
     visibility: hidden;
 }
+
+/* BLOG ARTICLE STYLING */
+
+  .article {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+
+  .half-image {
+    float: left; /* or right, depending on your layout */
+    width: 50%; /* take up half the container's width */
+    margin-right: 15px; /* some space between image and text */
+  }
+
+  /* Optional: clear floats after the paragraph if needed */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
