@@ -41,28 +41,27 @@ $article_body = $doc->saveHTML($article_element); // get the raw HTML of the art
         
         <?php include '../header.php' ?>
 
-        <div class="grid-container">
             <div class="grid-x grid-padding-x">
                 <div class="large-12 cell">
                     <h1 class="post_title"><?php echo $article_title; ?></h1>
                 </div>
-
-                <div class="large-12 cell" id="article_container">
-
-
-
-
-                    <!-- ARTICLE GOES HERE -->
-
-                    <?php echo $article_body; ?>
-
-
-
-
-
-                </div>
             </div>
-        </div>
+
+            <div id="article_container">
+
+
+
+
+                <!-- ARTICLE GOES HERE -->
+
+                <?php echo $article_body; ?>
+
+
+
+
+
+            </div>
+
     </div> <!-- END OF MAIN WRAPPER -->
 
 

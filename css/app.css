@@ -404,6 +404,12 @@ article {
 
   #article_container {
     padding: 10px;
+    width: 700px;
+    max-width: 700px;
+
+    @media (max-width: 700px) {
+        width: 100%;
+    }
   }
 
   /* Optional: clear floats after the paragraph if needed */
