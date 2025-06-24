@@ -11,13 +11,11 @@
 $article_html = file_get_contents('posts/post-template.php');
 $doc = new DOMDocument();
 $doc->loadHTML($article_html);
-
 libxml_clear_errors();
-
 
 $article_title = $doc->getElementById('article_title')->nodeValue; // nodeValue ONLY retrieves text (clears all tags)
 $article_element = $doc->getElementById('article_body'); // Get the article element itself for now
-$article_body = $doc->saveHTML($article_element); // get the raw HTML of the element for later
+$article_body = $doc->saveHTML($article_element); // get the raw HTML of the article element for later echoing
 
 
 ?>
