@@ -67,7 +67,7 @@ $article_body = $doc->saveHTML($article_element); // get the raw HTML of the art
             </div>
 
 
-            <div id="more_posts">
+            <div id="more_posts_list_box">
                 <h5>More posts.</h5>
 
                 <?php include 'list.php'; ?>

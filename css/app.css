@@ -289,6 +289,7 @@ blockquote {
 
 .main-wrapper {
     min-height: 100vh;
+    width: 100vw;
 }
 
 .get-it {
@@ -430,7 +431,21 @@ blockquote {
     visibility: hidden;
 }
 
-#more_posts {
+#posts_list_box {
+    margin-left: 15px;
+    padding: 10px;
+    border: 1px solid #111;
+    width: 700px;
+
+    @media (max-width: 724px) {
+        width: 100%;
+        margin: 0px;
+        border: none;
+        background-color: #ccc;
+    }
+}
+
+#more_posts_list_box {
     margin-left: 15px;
     padding: 10px;
     border: 1px solid #111;

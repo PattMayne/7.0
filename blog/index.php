@@ -19,25 +19,14 @@
         
         <?php include '../header.php' ?>
 
-        <div class="grid-x grid-padding-x">
-            <!-- START OF MAIN CONTENT BOXES -->
 
-            <div class="large-4 medium-6 small-12 cell" id="about_box">
+            <div id="posts_list_box">
+                <h5>All my posts:</h5>
 
-                <div class="grid-x grid-padding-x">
+                <?php include 'list.php'; ?>
 
-                    <div class="large-12 cell">
-                        <div class="callout primary">
-                            <h5>All my posts:</h5>
-
-                            <?php include 'list.php'; ?>
-
-                        </div>
-
-                    </div>
-                </div>
             </div>
-        </div>
+
     </div>
 
 
