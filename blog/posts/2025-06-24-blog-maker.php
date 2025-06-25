@@ -17,6 +17,11 @@
 
     <!-- START OF BODY -->
 
+    <blockquote>
+        Oh, so he's going to waste our time poasting about tea on his little blog?
+    </blockquote>
+    <p class="attribution">-You, the rabble</p>
+
     <p>
         Finally, a self-created (and self-owned (to the extent that anything online can be user-owned)) "BLOG" (or diary).
     </p>

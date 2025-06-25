@@ -28,8 +28,7 @@
 
                     <div class="large-12 cell">
                         <div class="callout primary">
-                            <p class="bold-text">Under Construction.</p>
-                            <p>I'll probably install something external to this mini-site.</p>
+                            <h5>All my posts:</h5>
 
                             <?php include 'list.php'; ?>
 

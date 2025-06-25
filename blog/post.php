@@ -66,18 +66,14 @@ $article_body = $doc->saveHTML($article_element); // get the raw HTML of the art
 
             </div>
 
-            <div class="grid-x grid-padding-x">
-                <div class="large-4 medium-6 small-12 cell">
 
-                    <div class="callout primary">
-                        <h5>More posts.</h5>
+            <div id="more_posts">
+                <h5>More posts.</h5>
 
-                        <?php include 'list.php'; ?>
+                <?php include 'list.php'; ?>
 
-                    </div>
-
-                </div>
             </div>
+
     </div> <!-- END OF MAIN WRAPPER -->
 
 

@@ -61,6 +61,11 @@ article {
     padding: 10px;
 }
 
+blockquote {
+    color: #666;
+    border-left: 3px solid #444;
+}
+
 /*     FOUNDATION overrides     */
 
 
@@ -350,8 +355,8 @@ article {
     font-family: 'alte-bold';
     font-size: large;
     color:#222;
-    margin: 3px;
-    padding: 3px;
+    margin: 0px 3px 0px 3px;
+    padding: 0px 3px 0px 3px;
 }
 
 .blog_link:hover {
@@ -363,6 +368,13 @@ article {
     font-family: 'alte';
 }
 
+.attribution {
+    font-style: italic;
+    color:#222;
+    margin-left: 15px;
+    margin-top: -10px;
+    padding-top: 0px;
+}
 
 /*    CUSTOM ids      */
 
@@ -416,6 +428,23 @@ article {
 
 #fuckbutton{
     visibility: hidden;
+}
+
+#more_posts {
+    margin-left: 15px;
+    padding: 10px;
+    border: 1px solid #111;
+    width: 700px;
+    max-width: 700px;
+
+    @media (max-width: 700px) {
+        width: 100%;
+        margin-left: 0px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        padding-top: 0px;
+    }
 }
 
 /* BLOG ARTICLE STYLING */
