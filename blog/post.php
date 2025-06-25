@@ -20,7 +20,7 @@ libxml_clear_errors();
 $article_title = $doc->getElementById('article_title')->nodeValue; // nodeValue ONLY retrieves text (clears all tags)
 $article_element = $doc->getElementById('article_body'); // Get the article element itself for now
 $article_body = $doc->saveHTML($article_element); // get the raw HTML of the article element for later echoing
-
+$article_date = $doc->getElementById('article_date')->nodeValue;
 
 ?>
 
@@ -60,6 +60,7 @@ $article_body = $doc->saveHTML($article_element); // get the raw HTML of the art
 
                 <?php echo $article_body; ?>
 
+                    <p class="date_p"><?php echo $article_date; ?></p>
 
 
 
