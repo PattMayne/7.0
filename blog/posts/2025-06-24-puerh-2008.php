@@ -1,11 +1,13 @@
 
 <div id="article_title">Puerh Shou 2008</div>
 <div id="article_date">2025-06-24</div>
-<div id="categories">tea, puerh</div>
+<div id="categories">tea, puerh, review</div>
 
 <article class="article clearfix" id="article_body">
 
     <!-- START OF BODY -->
+
+	<p>From Yunnan, China.</p>
 
     <img src="posts/img/puerh-2008-1.png" alt="gaze into the abyss of this smooth, dark tea" style="float: left; width: 40%; margin-right: 10px;" />
 	<p>

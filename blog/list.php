@@ -49,7 +49,7 @@ foreach ($filteredFileNames as $fileName) {
 
 
 // SORT by DATE (which should be prefixed in the filename)
-usort($filenamesAndCategoties, function ($a, $b) {
+usort($filenamesAndCategoties, function ($b, $a) {
     return strcmp($a['filename'], $b['filename']);
 });
 
