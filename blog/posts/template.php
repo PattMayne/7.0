@@ -1,5 +1,9 @@
 
 <!--
+
+    TEMPLATE for a blog post.
+    The blog posts in this folder will all be snippets for inclusion in the blog post list, and to be display in-full in the post.php file.
+
     NAMING CONVENTION:
     * YYYY-MM-DD-post-title-slug.php
 

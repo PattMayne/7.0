@@ -8,7 +8,6 @@
 
 <?php
 
-//$article_html = file_get_contents('posts/post-template.php');
 $article_html = file_get_contents('posts/2025-06-24-puerh-2008.php');
 $doc = new DOMDocument();
 $doc->loadHTML($article_html);

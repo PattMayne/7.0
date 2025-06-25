@@ -31,6 +31,8 @@
                             <p class="bold-text">Under Construction.</p>
                             <p>I'll probably install something external to this mini-site.</p>
 
+                            <?php include 'list.php'; ?>
+
                         </div>
 
                     </div>
