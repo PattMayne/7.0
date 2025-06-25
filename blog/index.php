@@ -18,14 +18,17 @@
     <div class="main-wrapper">
         
         <?php include '../header.php' ?>
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+            <h3 class="section-title-text hide-for-small-only">POSTS</h3>
+        </div>
 
-
-            <div id="posts_list_box">
-                <h5>All my posts:</h5>
-
-                <?php include 'list.php'; ?>
-
-            </div>
+    </div>
+        
+    <div id="posts_list_box">
+        <h4 class="section-title-text show-for-small-only">POSTS</h4>
+        <?php include 'list.php'; ?>
+    </div>
 
     </div>
 
