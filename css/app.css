@@ -154,8 +154,21 @@ blockquote {
     padding: 5px;
 }
 
+.social_button_container {
+    display: flex;
+    flex-wrap: wrap; /* allows items to wrap to next line */
+    gap: 10px;                /* optional: space between buttons */
+    align-items: center;      /* vertically align items in the center */
+    width: 100%;
+}
+
 .button.social {
     background-color: #000;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: flex;            /* make each button a flex container too (if needed) */
+    align-items: center;      /* center content vertically inside each button */
+    color: white;  
 }
 
 
@@ -408,7 +421,7 @@ blockquote {
 #podcasts_box {}
 
 #twitter_pic {
-    padding-right: 7px;
+    padding-right: 0px;
     height: 21px;
 }
 

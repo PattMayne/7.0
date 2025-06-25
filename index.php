@@ -27,30 +27,25 @@
                 <div class="grid-x grid-padding-x">
 
                     <div class="large-12 cell">
-                        <h3 class="section-title-text hide-for-small-only">ABOUT</h3>
-                        <img src="img/matt-2.png" id="profile-pic">
+                        <img src="img/matt-1.png" id="profile-pic">
                     </div>
 
                     <div class="large-12 cell">
                         <div class="callout primary">
                             <p class="bold-text">Matt Payne is a Canadian author, web developer, and podcaster. He is the greatest Canadian novelist of all time. He has complete faith in himself.</p>
 
+                            <div class="social_button_container">
+                                <a class="button social" href="https://pattmayne.substack.com" target="blank">
+                                    <img id="substk_pic" src="img/substk.png">&nbsp;Substack
+                                </a><a class="button social" href="https://www.youtube.com/pattmayne" target="blank">
+                                    <img id="yt_pic" src="img/yt.png">&nbsp;YouTube
+                                </a><a class="button social" href="https://www.twitter.com/pattmayne" target="blank">
+                                    <img id="twitter_pic" src="img/twit.png">&nbsp;Twitter
+                                </a>
+                            </div>
+                            
 
-                            <a class="button social" href="https://pattmayne.substack.com" target="blank">
-                                <img id="substk_pic" src="img/substk.png">&nbsp;Poetry on Substack
-                            </a>
 
-                            <a class="button social" href="https://www.twitter.com/pattmayne" target="blank">
-                                <img id="twitter_pic" src="img/twit.png">&nbsp;Twitter
-                            </a>
-
-                            <a class="button social" href="https://www.youtube.com/pattmayne" target="blank">
-                                <img id="yt_pic" src="img/yt.png">&nbsp;YouTube
-                            </a>
-
-                            <a class="button social hide-for-small-only" id="fuckbutton" href="https://pattmayne.substack.com" target="blank">
-                                <img id="substk_pic" src="img/substk.png">&nbsp;Poetry on Substack
-                            </a>
                         </div>
 
                     </div>
