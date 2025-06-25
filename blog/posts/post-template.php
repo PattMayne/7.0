@@ -9,8 +9,9 @@
 
 -->
 
-<div id="article_title">_TITLE_TO_REPLACE</div>
+<div id="article_title">_TITLE_TO_REPLACE_</div>
 <div id="article_date">YYYY-MM-DD</div>
+<div id="categories">false</div>
 
 <article class="article clearfix" id="article_body">
 
