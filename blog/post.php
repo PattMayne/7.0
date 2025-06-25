@@ -8,7 +8,11 @@
 
 <?php
 
-$article_html = file_get_contents('posts/2025-06-24-puerh-2008.php');
+
+$slug = $_GET['slug'] ?? '2025-06-24-blog-maker';
+$file_path_and_name = 'posts/' . $slug . '.php';
+$article_html = file_get_contents($file_path_and_name);
+
 $doc = new DOMDocument();
 $doc->loadHTML($article_html);
 libxml_clear_errors();
@@ -62,6 +66,18 @@ $article_body = $doc->saveHTML($article_element); // get the raw HTML of the art
 
             </div>
 
+            <div class="grid-x grid-padding-x">
+                <div class="large-4 medium-6 small-12 cell">
+
+                    <div class="callout primary">
+                        <h5>More posts.</h5>
+
+                        <?php include 'list.php'; ?>
+
+                    </div>
+
+                </div>
+            </div>
     </div> <!-- END OF MAIN WRAPPER -->
 
 

@@ -26,7 +26,7 @@
     </P>
 
     <p>
-        Do I even need a blog? Everything else is overkill. I write novels and stories, but I want to sell those. I don't write substack-style articles. So on the rare occasion that I wish I had a blogspace, well here it is. Actually I might store recipes here, and reviews of various teas.
+        Everything else is overkill. I write novels and stories, but I want to sell those. I don't write substack-style articles. So on the rare occasion that I wish I had a blogspace, well here it is. Actually I might store recipes here, and reviews of various teas.
     </p>
 
 
