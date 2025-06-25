@@ -37,7 +37,7 @@ foreach ($filteredFileNames as $fileName) {
     $article_categories = $doc->getElementById('categories')->nodeValue;
 
     $filenameWithoutExt = pathinfo($fileName, PATHINFO_FILENAME);
-    $linkURL = $domain . '/blog/post.php?slug=' . $filenameWithoutExt;
+    $linkURL = '/blog/post.php?slug=' . $filenameWithoutExt;
 
     $linkElement = '<a class="blog_link" target="_blank" href="' . $linkURL . '">' . $article_title . '</a><br/>';
 
