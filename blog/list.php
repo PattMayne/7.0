@@ -15,15 +15,10 @@ $filteredFiles = array_filter($phpFiles, function($file) use ($folderPath) {
 });
 
 // Count the files
-$filteredCount = count($filteredFiles);
+$filteredCount = count($filteredFiles); // probably delete this... I'm not using it.
 
 // Get filenames only
 $filteredFileNames = array_map('basename', $filteredFiles);
-
-// echo "Number of PHP files (excluding 'example.php'): " . $filteredCount . "\n";
-// echo "File names:\n";
-
-$titlesAndFilenames = array();
 
 foreach ($filteredFileNames as $fileName) {
 
@@ -39,7 +34,7 @@ foreach ($filteredFileNames as $fileName) {
     $filenameWithoutExt = pathinfo($fileName, PATHINFO_FILENAME);
     $linkURL = '/blog/post.php?slug=' . $filenameWithoutExt;
 
-    $linkElement = '<a class="blog_link" target="_blank" href="' . $linkURL . '">' . $article_title . '</a><br/>';
+    $linkElement = '<a class="blog_link" href="' . $linkURL . '">' . $article_title . '</a><span class="blog_link_cats"> [ ' . $article_categories . ' ]</span><br/>';
 
     echo $linkElement;
 
