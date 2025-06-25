@@ -10,7 +10,7 @@
     <title>BLOG - pattmayne.com</title>
     <link rel="icon" href="../img/guy_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/foundation.css">
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/app.css?ts=<?=time()?>">
 </head>
 
 <body>
