@@ -20,6 +20,9 @@ $filteredCount = count($filteredFiles); // probably delete this... I'm not using
 // Get filenames only
 $filteredFileNames = array_map('basename', $filteredFiles);
 
+$filenamesAndCategoties = array();
+
+// Build the array of link-data objects.
 foreach ($filteredFileNames as $fileName) {
 
     $pathAndFilename = 'posts/'. $fileName;
@@ -34,10 +37,28 @@ foreach ($filteredFileNames as $fileName) {
     $filenameWithoutExt = pathinfo($fileName, PATHINFO_FILENAME);
     $linkURL = '/blog/post.php?slug=' . $filenameWithoutExt;
 
-    $linkElement = '<a class="blog_link" href="' . $linkURL . '">' . $article_title . '</a><span class="blog_link_cats"> [ ' . $article_categories . ' ]</span><br/>';
+    $filenamesAndCategoties[] = [
+        'url' => $linkURL,
+        'title' => $article_title,
+        'categories' => $article_categories,
+        'filename' => $fileName
+    ];
+
+
+}
+
+
+// SORT by DATE (which should be prefixed in the filename)
+usort($filenamesAndCategoties, function ($a, $b) {
+    return strcmp($a['filename'], $b['filename']);
+});
+
+foreach( $filenamesAndCategoties as $unit) {
+    //echo ''. $unit['url'] .'<br/>';
+
+    $linkElement = '<a class="blog_link" href="' . $unit['url'] . '">' . $unit['title'] . '</a><span class="blog_link_cats"> [ ' . $unit['categories'] . ' ]</span><br/>';
 
     echo $linkElement;
-
 }
 
 
