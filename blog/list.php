@@ -56,7 +56,7 @@ usort($filenamesAndCategoties, function ($b, $a) {
 foreach( $filenamesAndCategoties as $unit) {
     //echo ''. $unit['url'] .'<br/>';
 
-    $linkElement = '<a class="blog_link" href="' . $unit['url'] . '">' . $unit['title'] . '</a><span class="blog_link_cats"> [ ' . $unit['categories'] . ' ]</span><br/>';
+    $linkElement = '<a class="blog_link" href="' . $unit['url'] . '">' . $unit['title'] . '</a><span class="blog_link_cats"> [&nbsp;' . $unit['categories'] . '&nbsp;]</span><br/>';
 
     echo $linkElement;
 }
