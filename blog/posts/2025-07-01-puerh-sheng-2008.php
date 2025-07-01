@@ -27,9 +27,9 @@
     </p>
 
     <p>
-        It's really a delicious tea. The natural fermentation is totally distinct from the "artificial" fermentation I'm used to from the shou varieties. Those are more dark, more in-your-face.
+        You can steep this tea up to 11 times. Each time you make a cup it only takes 12-20 seconds of immersion. I guess that's because it's been fermenting (and decaying) for 17 years, so the particles are extracted much easier. But I don't feel the effect of the caffeine so easily, so (speculating wildly) I think maybe the caffeine still requires longer to be extracted. Which means I can drink cup after delicious cup. And one batch will last two or three days.
         <img src="posts/img/puerh-sheng-2008-2.png" alt="Loose puerh sheng tea leaves" style="float: right; width: 200px; margin: 0 0 10px 10px;" />
-        The combination of delicate subtlety and tongue-dominating pungent dankness makes this a novelty where each layer of flavor is delicious. Truly a prestigious and exotic tea.
+        It's really a delicious tea. The natural fermentation is totally distinct from the "artificial" fermentation I'm used to from the shou varieties. Those are more dark, more in-your-face. The combination of delicate subtlety and tongue-dominating pungent dankness makes this a novelty where each layer of flavor is delicious. Truly a prestigious and exotic tea.
     </p>
 
 
