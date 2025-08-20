@@ -44,6 +44,7 @@
                                 </a>
                             </div>
                             
+                            <p class="bold-text">His stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3 (Bards and Sages), and elswhere.</p>
 
 
                         </div>
