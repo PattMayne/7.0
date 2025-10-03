@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: andada;
+    src: url(../fonts/andada.otf);
+}
+
+@font-face {
     font-family: alte-bold;
     src: url(../fonts/alte-haas-grotesk.bold.ttf);
 }
@@ -50,7 +55,8 @@ p,
 a,
 li,
 input {
-    font-family: "Helvetica Neue",
+    font-family:
+        "Helvetica Neue",
         Helvetica,
         Roboto,
         Arial,
@@ -292,6 +298,15 @@ blockquote {
     @media (max-width: 430px) {
         height: 120px;
     }
+}
+
+.book-img-wrap {
+    float: left;
+    width: 30%;
+    margin-right: 10px;
+}
+
+.book-desc {   /* or word-wrap: break-word; */
 }
 
 .book-CTA {
