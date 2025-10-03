@@ -1,6 +1,23 @@
 <!-- We trust that the global variables are filled and valid in the calling script. -->
+<?php
+    // see if $bookSizes is already set
 
-<div class="large-4 medium-6 small-12 cell">
+    $book_callout_sizes = $page == 'about' ? [
+        "small" => 12,
+        "medium" => 12,
+        "large" => 6
+    ] : [
+        "small" => 12,
+        "medium" => 6,
+        "large" => 4
+    ];
+
+
+?>
+
+
+
+<div class="large-<?php echo $book_callout_sizes["large"] ?> medium-<?php echo $book_callout_sizes["medium"] ?> small-<?php echo $book_callout_sizes["small"] ?> cell">
     <div class="callout book_callout">
         <div class="book-container">
             <div class="book-details">
@@ -11,6 +28,7 @@
         </div>
 
         <?php
+
             // Show the links.
             foreach ($links as $link) {
                 echo '<a class="button CTA book-CTA" href="';

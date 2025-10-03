@@ -344,6 +344,10 @@ blockquote {
     border: 1px solid #111;
 }
 
+.grid-test {
+    border: 1px dotted blue;
+}
+
 .centered-image-container {
     text-align: center;
 }
@@ -437,7 +441,7 @@ blockquote {
 #music_box {}
 
 #about_box {
-    max-width: 500px;
+
 }
 
 #podcasts_box {}

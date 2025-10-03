@@ -22,7 +22,7 @@
         <div class="grid-x grid-padding-x">
             <!-- START OF MAIN CONTENT BOXES -->
 
-            <div class="large-4 medium-6 small-12 cell" id="about_box">
+            <div class="large-3 medium-5 small-12 cell" id="about_box">
 
                 <div class="grid-x grid-padding-x">
 
@@ -52,6 +52,69 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Now we put the BOOKS in a TWO-CELL div -->
+
+            <div class="large-9 medium-7 small-12 cell">
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-12 cell">
+                        <h3 class="section-title-text show-for-small-only">Books</h3>
+                    </div>
+
+
+        <!-- BOOKS LIST (to go within the grid-x) -->
+
+
+<?php
+
+/*
+    Declare global variables for book data.
+    We will loop through XML data, fill each variable,
+    include (render) the book HTML snippet,
+    then hit the next book and override all the data.
+*/
+
+$title;
+$image_filename;
+$description;
+$links;
+
+if (file_exists('./data/books.xml')) {
+        $books_xml = simplexml_load_file('./data/books.xml');
+
+        foreach ($books_xml->book as $book) {
+
+            // Fill the variables with book data,
+            // overriding data from previous iteration.
+            $title = $book->title;
+            $image_filename = $book->image_filename;
+            $description = $book->description;
+            $raw_links = $book->links;
+            $links = array();
+            foreach ($raw_links->link as $link) {
+                $links[] = array(
+                    'text' => $link->text,
+                    'url' => $link->url
+                );
+            }
+
+            // Data is ready. Render the book snippet.
+            include 'book.php';
+        }
+
+    } else {
+        exit('Failed to open ../data/books.xml.');
+    }
+
+
+?>
+        <!-- END OF BOOKS LIST -->
+
+                </div>
+
+            </div>
+
         </div>
     </div>
 
