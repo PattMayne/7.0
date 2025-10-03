@@ -1,12 +1,4 @@
-@font-face {
-    font-family: vampireWars;
-    src: url(../fonts/vampire_wars.otf);
-}
 
-@font-face {
-    font-family: mont;
-    src: url(../fonts/mont_heavy.otf);
-}
 
 @font-face {
     font-family: andada;
@@ -277,6 +269,7 @@ blockquote {
 
     padding-bottom: 0;
 }
+
 
 .book-details {
     height: 100%;
