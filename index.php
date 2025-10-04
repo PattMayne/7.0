@@ -32,7 +32,7 @@
 
                     <div class="large-12 cell">
                         <div class="callout primary">
-                            <p class="bold-text">Matt Payne is a Canadian author, web developer, and podcaster. He is the greatest Canadian novelist of all time. He has complete faith in himself.</p>
+                            <p class="bold-text">Matt Payne writes novels of comedy, satire, and adventure.</p>
 
                             <div class="social_button_container">
                                 <a class="button social" href="https://pattmayne.substack.com" target="blank">
