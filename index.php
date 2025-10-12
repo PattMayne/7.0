@@ -32,20 +32,21 @@
 
                     <div class="large-12 cell">
                         <div class="callout primary">
+                            
                             <p class="bold-text">Matt Payne writes novels of comedy, satire, and adventure.</p>
+
+                            <p class="bold-text">His stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3 (Bards and Sages), and elswhere.</p>
 
                             <div class="social_button_container">
                                 <a class="button social" href="https://pattmayne.substack.com" target="blank">
-                                    <img id="substk_pic" src="img/substk.png">&nbsp;Substack
+                                    &nbsp;&nbsp;<img id="substk_pic" src="img/substk.png">
                                 </a><a class="button social" href="https://www.youtube.com/pattmayne" target="blank">
-                                    <img id="yt_pic" src="img/yt.png">&nbsp;YouTube
+                                    &nbsp;&nbsp;<img id="yt_pic" src="img/yt.png">
                                 </a><a class="button social" href="https://www.twitter.com/pattmayne" target="blank">
-                                    <img id="twitter_pic" src="img/twit.png">&nbsp;Twitter
+                                    &nbsp;&nbsp;<img id="twitter_pic" src="img/twit.png">&nbsp;&nbsp;
                                 </a>
                             </div>
                             
-                            <p class="bold-text">His stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3 (Bards and Sages), and elswhere.</p>
-
 
                         </div>
 
