@@ -18,8 +18,9 @@
             <link>
                 <text>E-book</text>
                 <url>https://books2read.com/u/3JvRLe</url>
-            </link>c
+            </link>
         </links>
+        <slug>civil-war</slug>
     </book>
 
     <book>
@@ -32,6 +33,7 @@
                 <url>https://www.terranomicon.com</url>
             </link>
         </links>
+        <slug>terranomicon</slug>
     </book>
 
     <book>
@@ -52,6 +54,7 @@
                 <url>https://draft2digital.com/book/1438135</url>
             </link>
         </links>
+        <slug>millenarianistic</slug>
     </book>
 
     <book>
@@ -73,6 +76,7 @@
                 <url>https://draft2digital.com/book/1438074</url>
             </link>
         </links>
+        <slug>sick-book</slug>
     </book>
 
     <book>
@@ -95,6 +99,7 @@
                 <url>https://draft2digital.com/book/1438124</url>
             </link>
         </links>
+        <slug>adventure-poem</slug>
     </book>
 
     <book>
@@ -107,6 +112,7 @@
                 <url>https://draft2digital.com/book/1438143</url>
             </link>
         </links>
+        <slug>righteous-book</slug>
     </book>
 
     <book>
@@ -119,6 +125,7 @@
                 <url>https://draft2digital.com/book/1438130</url>
             </link>
         </links>
+        <slug>microcalypse</slug>
     </book>
 
 </books>
@@ -136,6 +143,7 @@
                 <url>REPLACE</url>
             </link>
         </links>
+        <slug>REPLACE</slug>
     </book>
 </example>
 
