@@ -408,6 +408,11 @@ blockquote {
 /*    CUSTOM ids      */
 
 
+.more_books_link {
+    color: red;
+    text-align: right;
+}
+
 #pattmayne_img {
     margin: auto;
     height: 200px;

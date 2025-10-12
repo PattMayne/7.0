@@ -83,6 +83,8 @@ $links;
 
 if (file_exists('./data/books.xml')) {
         $books_xml = simplexml_load_file('./data/books.xml');
+        $max_books_to_display = 4;
+        $books_displayed = 0;
 
         foreach ($books_xml->book as $book) {
 
@@ -102,6 +104,13 @@ if (file_exists('./data/books.xml')) {
 
             // Data is ready. Render the book snippet.
             include 'book.php';
+
+            // Limit the number of books on the front page
+            $books_displayed += 1;
+
+            if ($books_displayed >= 4) {
+                break;
+            }
         }
 
     } else {
@@ -111,6 +120,9 @@ if (file_exists('./data/books.xml')) {
 
 ?>
         <!-- END OF BOOKS LIST -->
+                    <div class="large-12 cell">
+                        <a href="/books" class="more_books_link"><h3>MORE BOOKS</h3></a>
+                    </div>
 
                 </div>
 
