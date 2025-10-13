@@ -1,7 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
-<?php $page = 'about'; ?>
+<?php
+    $page = 'about';
+    include 'helpers.php';
+?>
 
 <head>
     <meta charset="utf-8">
@@ -82,40 +85,40 @@ $description;
 $links;
 
 if (file_exists('./data/books.xml')) {
-        $books_xml = simplexml_load_file('./data/books.xml');
-        $max_books_to_display = 4;
-        $books_displayed = 0;
+    $books_xml = simplexml_load_file('./data/books.xml');
+    $max_books_to_display = 4;
+    $books_displayed = 0;
 
-        foreach ($books_xml->book as $book) {
+    foreach ($books_xml->book as $book) {
 
-            // Fill the variables with book data,
-            // overriding data from previous iteration.
-            $title = $book->title;
-            $image_filename = $book->image_filename;
-            $description = $book->description;
-            $raw_links = $book->links;
-            $links = array();
-            foreach ($raw_links->link as $link) {
-                $links[] = array(
-                    'text' => $link->text,
-                    'url' => $link->url
-                );
-            }
-
-            // Data is ready. Render the book snippet.
-            include 'book.php';
-
-            // Limit the number of books on the front page
-            $books_displayed += 1;
-
-            if ($books_displayed >= 4) {
-                break;
-            }
+        // Fill the variables with book data,
+        // overriding data from previous iteration.
+        $title = $book->title;
+        $image_filename = $book->image_filename;
+        $description = $book->description;
+        $raw_links = $book->links;
+        $links = array();
+        foreach ($raw_links->link as $link) {
+            $links[] = array(
+                'text' => $link->text,
+                'url' => $link->url
+            );
         }
 
-    } else {
-        exit('Failed to open ../data/books.xml.');
+        // Data is ready. Render the book snippet.
+        include 'book.php';
+
+        // Limit the number of books on the front page
+        $books_displayed += 1;
+
+        if ($books_displayed >= 4) {
+            break;
+        }
     }
+
+} else {
+    exit('Failed to open ../data/books.xml.');
+}
 
 
 ?>

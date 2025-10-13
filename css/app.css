@@ -86,6 +86,7 @@ blockquote {
     padding: 0.25rem 0.5rem 0.5rem 0.5rem;
     background-color: #ccc;
     color: #0a0a0a;
+    border: 2px solid black;
 }
 
 
@@ -93,8 +94,7 @@ blockquote {
     background: #fff;
     border: none;
     color: #000;
-    border: none;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 
@@ -332,7 +332,7 @@ blockquote {
 
 .book_callout{
     background-color: #f0f0f0;
-    border: 1px solid #111;
+    border: 2px solid #000;
 }
 
 .grid-test {

@@ -1,7 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
-<?php $page = 'books'; ?>
+<?php
+    $page = 'books';
+    include '../helpers.php';
+?>
 
 <head>
     <meta charset="utf-8">
