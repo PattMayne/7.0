@@ -36,6 +36,29 @@
         <slug>terranomicon</slug>
     </book>
 
+
+    <book>
+        <title>Probiotic Psychotic (Stories)</title>
+        <image_filename>probiotic.jpg</image_filename>
+        <description>When a terrorist cult threatens to attack the Metric System, Werner Herzog must travel to outer space to race other film-makers to Jupiter. But five dirt-bike champions soon face unbelievable obstacles before their big tournament. Are you ready to learn the truth about Antarctica and the Flat Earth? Some of these stories appeared previously in The Righteous Book of Truth.</description>
+        <links>
+            <link>
+                <text>Amazon (US)</text>
+                <url>https://www.amazon.com/dp/B0CX96ZPX6</url>
+            </link>
+
+            <link>
+                <text>Amazon (CA)</text>
+                <url>https://www.amazon.ca/dp/B0CX96ZPX6</url>
+            </link>
+            <link>
+                <text>D2D E-book</text>
+                <url>https://draft2digital.com/book/3253219</url>
+            </link>
+        </links>
+        <slug>probiotic</slug>
+    </book>
+
     <book>
         <title>Millenarianistic Chronodyke</title>
         <image_filename>chrono.png</image_filename>
@@ -56,6 +79,7 @@
         </links>
         <slug>millenarianistic</slug>
     </book>
+
 
     <book>
         <title>The Sick Book of Lies</title>
@@ -100,19 +124,6 @@
             </link>
         </links>
         <slug>adventure-poem</slug>
-    </book>
-
-    <book>
-        <title>The Righteous Book of Truth</title>
-        <image_filename>truth.jpg</image_filename>
-        <description>Six Spectacular Shorts. Tales of paranoia and visions of glory.</description>
-        <links>
-            <link>
-                <text>D2D E-book</text>
-                <url>https://draft2digital.com/book/1438143</url>
-            </link>
-        </links>
-        <slug>righteous-book</slug>
     </book>
 
     <book>

@@ -5,7 +5,6 @@ function reverse_string($string) {
     $low_index = 0;
 
     while ($high_index > $low_index) {
-        echo "looping " . $high_index;
         $top_char = $string[$high_index];
         $string[$high_index] = $string[$low_index];
         $string[$low_index] = $top_char;
@@ -25,8 +24,6 @@ $floor_time = (int) $floor_time;
 
 srand($floor_time);
 
-//echo time();
-echo '.' . $floor_time;
 
 // This was cool but I decided not to use it. But it's cool so I'm keeping it.
 // randomly pick a side and give it a 5px black border.
@@ -37,7 +34,6 @@ function inject_thicker_border() {
         "right",
         "left");
     $side_index = rand(0, count($sides) - 1);
-    echo $side_index;
     $html = ' style="border-' . $sides[$side_index] . ': 5px solid black;" ';
     return $html;
 }

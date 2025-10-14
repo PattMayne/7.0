@@ -38,7 +38,7 @@
                             
                             <p class="bold-text">Matt Payne writes novels of comedy, satire, and adventure.</p>
 
-                            <p class="bold-text">His stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3 (Bards and Sages), and elswhere.</p>
+                            <p>His stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3 (Bards and Sages), and elswhere.</p>
 
                             <div class="social_button_container">
                                 <a class="button social" href="https://pattmayne.substack.com" target="blank">
