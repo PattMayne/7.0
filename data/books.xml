@@ -2,6 +2,33 @@
 <books>
 
     <book>
+        <title>Immaculate Voice of the Infected Star</title>
+        <image_filename>voice.jpg</image_filename>
+        <description>A long-form poem of reproductive horror.
+            <br/>Hannah Gibson has been murdered.
+            <br/>Maude LaFleur must find her killer.
+            <br/>But now they’re after her
+            <br/>&nbsp;and the thing growing inside her,
+            <br/>&nbsp;&nbsp;planted by a voice
+            <br/>&nbsp;&nbsp;&nbsp;from the stars.</description>
+        <links>
+            <link>
+                <text>Amazon (US)</text>
+                <url>https://www.amazon.com/Immaculate-Voice-Infected-Star-Payne/dp/1069756334/</url>
+            </link>
+            <link>
+                <text>Amazon (CA)</text>
+                <url>https://www.amazon.ca/Immaculate-Voice-Infected-Star-Payne/dp/1069756334/</url>
+            </link>
+            <link>
+                <text>E-book</text>
+                <url>https://books2read.com/u/4EVree</url>
+            </link>
+        </links>
+        <slug>immaculate-voice</slug>
+    </book>
+
+    <book>
         <title>The Canadian Civil War</title>
         <image_filename>civil_war_paperback.jpg</image_filename>
         <description>Canada is doomed. Watch the pieces fall in these vivid dramatizations.
