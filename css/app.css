@@ -430,7 +430,7 @@ blockquote {
     color: black;
     background-color: rgba(255, 255, 255, 0.7);
     display: inline-block;
-    margin-top: 7px;
+    margin-top: 10px;
     padding-left: 6px;
     padding-right: 6px;
 }
