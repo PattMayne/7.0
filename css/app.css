@@ -20,10 +20,6 @@
     src: url(../fonts/LinLibertine_R.ttf);
 }
 
-@font-face {
-    font-family: armwarmer;
-    src: url(../fonts/armwarmer.otf);
-}
 
 
 /*    HTML elements  */
@@ -431,7 +427,6 @@ blockquote {
 
 #the_title {
     color: black;
-    font-family: armwarmer;
     background-color: #fff;
     display: inline-block;
     margin-top: 3px;
