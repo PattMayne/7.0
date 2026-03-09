@@ -123,7 +123,7 @@ if (file_exists('./data/books.xml')) {
 
 ?>
         <!-- END OF BOOKS LIST -->
-                    <div class="large-12 cell">
+                    <div class="large-12 cell" id="more_books_link_container">
                         <a href="/books" class="more_books_link"><h3 id="more_books">MORE BOOKS</h3></a>
                     </div>
 

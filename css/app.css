@@ -449,6 +449,10 @@ blockquote {
     padding-right: 6px;
 }
 
+#more_books_link_container {
+    text-align: right;
+}
+
 
 
 #books_box {}
