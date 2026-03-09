@@ -432,8 +432,9 @@ blockquote {
 #the_title {
     color: black;
     font-family: armwarmer;
-    background-color: #666;
-    width: auto;
+    background-color: #ea1515;
+    display: inline-block;
+    margin-top: 3px;
 }
 
 #footer-text {
