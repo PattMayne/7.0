@@ -25,6 +25,11 @@
 
 body {
     background-color: #fff;
+    background-image: url(../img/wall.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
 }
 
 h1,
