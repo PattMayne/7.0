@@ -305,6 +305,17 @@ blockquote {
 }
 
 .book-desc {   /* or word-wrap: break-word; */
+    margin-bottom: 2px;
+}
+
+.genres_p {
+    margin-bottom: 0px;
+    font-family: alte;
+    text-transform: uppercase;
+    font-size: small;
+    display: inline-block;
+    background-color: #ccc;
+    padding: 0px 3px;
 }
 
 .book-CTA {

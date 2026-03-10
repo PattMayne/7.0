@@ -34,7 +34,7 @@
 
                 <img src="../img/<?php echo $image_filename; ?>" class="book-img-wrap" />
                 <p class="book-desc"><?php echo $description; ?></p>
-                <h6><?php echo $genres; ?></h6>
+                <p class="genres_p"><?php echo $genres; ?></p>
             </div>
         </div>
 
