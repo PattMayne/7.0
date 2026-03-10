@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="pragma" content="no-cache" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pattmayne.com 7.0</title>
+    <title>pattmayne.com 7.4</title>
     <link rel="icon" href="img/guy_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css?ts=<?=time()?>">
@@ -29,22 +29,38 @@
 
                 <div class="grid-x grid-padding-x">
 
-                    <div class="large-12 cell hide-for-small-only">
-                        <img src="img/matt-1.png" id="profile-pic">
-                    </div>
 
-                    <div class="small-3 cell show-for-small-only">
+                    <!-- DESKTOP PROFILE PICS -->
+                    <div class="small-3 large-6 medium-6 cell p-p-cell-L hide-for-small-only">
                         <img src="img/matt-1-YELLOW.png" id="profile-pic">
                     </div>
-                    <div class="small-3 cell show-for-small-only">
+                    <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
                         <img src="img/matt-1.png" id="profile-pic">
                     </div>
-                    <div class="small-3 cell show-for-small-only">
+                    <div class="small-3 large-6 medium-6 cell p-p-cell-L hide-for-small-only">
                         <img src="img/matt-1-RED.png" id="profile-pic">
                     </div>
-                    <div class="small-3 cell show-for-small-only">
+                    <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
                         <img src="img/matt-1-BLUE.png" id="profile-pic">
                     </div>
+
+
+                    <!-- MOBILE PROFILE PICS -->
+                    <div class="small-3 large-6 medium-6 cell show-for-small-only">
+                        <img src="img/matt-1-YELLOW.png" id="profile-pic">
+                    </div>
+                    <div class="small-3 large-6 medium-6 cell show-for-small-only">
+                        <img src="img/matt-1.png" id="profile-pic">
+                    </div>
+                    <div class="small-3 large-6 medium-6 cell show-for-small-only">
+                        <img src="img/matt-1-RED.png" id="profile-pic">
+                    </div>
+                    <div class="small-3 large-6 medium-6 cell show-for-small-only">
+                        <img src="img/matt-1-BLUE.png" id="profile-pic">
+                    </div>
+
+
+
 
 
                     <div class="large-12 cell">
