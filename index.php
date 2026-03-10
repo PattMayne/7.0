@@ -29,9 +29,23 @@
 
                 <div class="grid-x grid-padding-x">
 
-                    <div class="large-12 cell">
+                    <div class="large-12 cell hide-for-small-only">
                         <img src="img/matt-1.png" id="profile-pic">
                     </div>
+
+                    <div class="small-3 cell show-for-small-only">
+                        <img src="img/matt-1-YELLOW.png" id="profile-pic">
+                    </div>
+                    <div class="small-3 cell show-for-small-only">
+                        <img src="img/matt-1.png" id="profile-pic">
+                    </div>
+                    <div class="small-3 cell show-for-small-only">
+                        <img src="img/matt-1-RED.png" id="profile-pic">
+                    </div>
+                    <div class="small-3 cell show-for-small-only">
+                        <img src="img/matt-1-BLUE.png" id="profile-pic">
+                    </div>
+
 
                     <div class="large-12 cell">
                         <div class="callout primary">
