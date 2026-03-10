@@ -45,6 +45,7 @@ $title;
 $image_filename;
 $description;
 $links;
+$genres;
 
 if (file_exists('../data/books.xml')) {
         $books_xml = simplexml_load_file('../data/books.xml');
@@ -57,6 +58,7 @@ if (file_exists('../data/books.xml')) {
             $image_filename = $book->image_filename;
             $description = $book->description;
             $raw_links = $book->links;
+            $genres = $book->genres;
             $links = array();
             foreach ($raw_links->link as $link) {
                 $links[] = array(

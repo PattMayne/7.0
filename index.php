@@ -18,14 +18,14 @@
 
 <body>
 
-    <div class="main-wrapper">
+    <div class="main-wrapper"> <!-- main warapper -->
         
         <?php include 'header.php' ?>
 
-        <div class="grid-x grid-padding-x">
+        <div class="grid-x grid-padding-x"> <!-- 2 -->
             <!-- START OF MAIN CONTENT BOXES -->
 
-            <div class="large-3 medium-5 small-12 cell" id="about_box">
+            <div class="large-3 medium-5 small-12 cell" id="about_box"> 
 
                 <div class="grid-x grid-padding-x">
 
@@ -59,9 +59,9 @@
 
             <!-- Now we put the BOOKS in a TWO-CELL div -->
 
-            <div class="large-9 medium-7 small-12 cell">
+            <div class="large-9 medium-7 small-12 cell"> <!-- 3 -->
 
-                <div class="grid-x grid-padding-x">
+                <div class="grid-x grid-padding-x"> <!-- 4 -->
                     <div class="large-12 cell">
                         <h3 class="section-title-text show-for-small-only">Books</h3>
                     </div>
@@ -127,12 +127,10 @@ if (file_exists('./data/books.xml')) {
                         <a href="/books" class="more_books_link"><h3 id="more_books">MORE BOOKS</h3></a>
                     </div>
 
-                </div>
-
-            </div>
-
-        </div>
-    </div>
+                </div> <!-- end of 4 -->
+            </div> <!-- end of 3 -->
+        </div> <!-- end of 2 -->
+    </div> <!-- end of main wrapper -->
 
 
     <!-- END OF MAIN CONTENT BOX -->
