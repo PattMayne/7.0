@@ -27,7 +27,9 @@
             <div class="large-12 cell">
                 <h3 class="section-title-text hide-for-small-only">Books</h3>
             </div>
+        </div>
 
+        <div id="books_grid">
         <!-- BOOKS LIST (to go within the grid-x) -->
 
 
@@ -77,13 +79,8 @@ if (file_exists('../data/books.xml')) {
 
 
 ?>
-        <!-- END OF BOOKS LIST -->
 
-        </div>
-
-    <!-- END OF MAIN CONTENT BOX -->
-
-    </div>
+        </div> <!-- END OF books_grid -->
 
     <!-- BEGINNING OF FOOTER -->
 
@@ -94,6 +91,7 @@ if (file_exists('../data/books.xml')) {
     <script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>
     <script src="../js/vendor/foundation.js"></script>
+    <script src="../js/books_list.js?ts=<?=time()?>"></script>
 </body>
 
 </html>

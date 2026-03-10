@@ -23,7 +23,7 @@
 
 
 
-<div class="large-<?php echo $book_callout_sizes["large"] ?> medium-<?php echo $book_callout_sizes["medium"] ?> small-<?php echo $book_callout_sizes["small"] ?> cell">
+<div>
     <div class="callout book_callout" >
         <div class="book-container">
             <div class="book-details">

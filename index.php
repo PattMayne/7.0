@@ -95,7 +95,9 @@
                     <div class="large-12 cell">
                         <h3 class="section-title-text show-for-small-only">Books</h3>
                     </div>
+                </div>
 
+                <div id="front_books_grid">
 
         <!-- BOOKS LIST (to go within the grid-x) -->
 
@@ -155,13 +157,14 @@ if (file_exists('./data/books.xml')) {
 
 ?>
         <!-- END OF BOOKS LIST -->
-                    <div class="large-12 cell" id="more_books_link_container">
-                        <a href="/books" class="more_books_link"><h3 id="more_books">MORE BOOKS</h3></a>
-                    </div>
 
-                </div> <!-- end of 4 -->
+
+                </div> <!-- end of front_books_grid -->
             </div> <!-- end of 3 -->
-        </div> <!-- end of 2 -->
+            <div class="large-12 cell" id="more_books_link_container">
+                <a href="/books" class="more_books_link"><h3 id="more_books">MORE BOOKS</h3></a>
+            </div>
+        </div> <!-- end of 2 (framework grid) -->
     </div> <!-- end of main wrapper -->
 
 
@@ -177,6 +180,7 @@ if (file_exists('./data/books.xml')) {
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
+    <script src="../js/about.js?ts=<?=time()?>"></script>
 </body>
 
 </html>

@@ -387,6 +387,7 @@ blockquote {
 .book_callout{
     background-color: #f0f0f0;
     border: 1px solid #000;
+    margin-bottom: 0px;
 }
 
 .grid-test {
@@ -498,6 +499,7 @@ blockquote {
 }
 
 #more_books_link_container {
+    margin-top: 14px;
     text-align: right;
 }
 
@@ -603,4 +605,27 @@ blockquote {
     content: "";
     display: table;
     clear: both;
-  }
+}
+
+#front_books_grid {
+    padding: 0px;
+    display: flex;
+    gap: 1rem;
+}
+
+#books_grid {
+    padding: 16px;
+    display: flex;
+    gap: 1rem;
+}
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.item {
+    background: #eee;
+    padding: 0px;
+    margin-bottom: 0px;
+}
