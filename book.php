@@ -34,7 +34,20 @@
 
                 <img src="../img/<?php echo $image_filename; ?>" class="book-img-wrap" />
                 <p class="book-desc"><?php echo $description; ?></p>
-                <p class="genres_p"><?php echo $genres; ?></p>
+                <div class="genres_box">
+
+        <?php
+
+            $genre_list = explode(",", $genres);
+            // Show the links.
+            foreach ($genre_list as $genre) {
+                echo '<span class="genre_span">';
+                echo $genre;
+                echo '</span>';
+            }
+        ?>
+
+                </div>
             </div>
         </div>
 
