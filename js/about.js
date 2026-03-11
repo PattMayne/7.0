@@ -2,14 +2,20 @@ $(document).foundation()
 
 const container = document.getElementById("front_books_grid")
 let book_items = Array.from(container.children)
-const getNumCols = width => width >= 1024 ? 2 : 1
+const getNumCols = width =>
+  width >= 1600 ? 3 :
+  width >= 1024 ? 2 : 1
 
+const more_books_link_container = document.getElementById("more_books_link_container_container")
+const more_books_link = Array.from(more_books_link_container.children)[0]
 
 const layoutGrid =() => {
-  const num_cols = getNumCols(document.documentElement.clientWidth)
+  const width = document.documentElement.clientWidth
+  const num_cols = getNumCols(width)
 
   // Remove old columns
   container.innerHTML = ''
+  more_books_link_container.innerHTML = ""
 
   // Create column containers
   const columns = []
@@ -20,8 +26,15 @@ const layoutGrid =() => {
     container.appendChild(col)
   }
 
+  const max_books = width >= 1600 ? 6 : 4
+
   // Distribute items
-  book_items.forEach((item, index) => columns[index % num_cols].appendChild(item))
+  book_items.forEach((item, index) => {
+    index < max_books && columns[index % num_cols].appendChild(item)
+  })
+
+  // add "more books" to the final column
+  columns[columns.length - 1].appendChild(more_books_link)
 }
 
 // Initial layout

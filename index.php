@@ -145,7 +145,7 @@ if (file_exists('./data/books.xml')) {
         // Limit the number of books on the front page
         $books_displayed += 1;
 
-        if ($books_displayed >= 4) {
+        if ($books_displayed >= 6) {
             break;
         }
     }
@@ -161,9 +161,14 @@ if (file_exists('./data/books.xml')) {
 
                 </div> <!-- end of front_books_grid -->
             </div> <!-- end of 3 -->
-            <div class="large-12 cell" id="more_books_link_container">
-                <a href="/books" class="more_books_link"><h3 id="more_books">MORE BOOKS</h3></a>
+
+            <!-- DO NOT CHANGE THE CONTENTS .. I'm manipulating it in JavaScript -->
+            <div class="large-12 cell" id="more_books_link_container_container">
+                <div class="large-12 cell" id="more_books_link_container">
+                    <a href="/books" class="more_books_link"><h3 id="more_books">MORE BOOKS</h3></a>
+                </div>
             </div>
+
         </div> <!-- end of 2 (framework grid) -->
     </div> <!-- end of main wrapper -->
 

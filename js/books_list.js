@@ -2,7 +2,10 @@ $(document).foundation()
 
 const container = document.getElementById("books_grid")
 let book_items = Array.from(container.children)
-const getNumCols = width => width >= 1024 ? 3 : width >= 640 ? 2 : 1
+const getNumCols = width =>
+  width >= 1600 ? 4 :
+  width >= 1024 ? 3 :
+  width >= 640 ? 2 : 1
 
 const layoutGrid = () => {
   const num_cols = getNumCols(document.documentElement.clientWidth)

@@ -463,10 +463,6 @@ blockquote {
 /*    CUSTOM ids      */
 
 
-.more_books_link {
-    color: red;
-    text-align: right;
-}
 
 #pattmayne_img {
     margin: auto;
@@ -499,10 +495,16 @@ blockquote {
 }
 
 #more_books_link_container {
-    margin-top: 14px;
+    margin-top: 0px;
     text-align: right;
 }
 
+.more_books_link {
+    color: red;
+    text-align: right;
+    display: inline-block;
+    width: auto;
+}
 
 
 #books_box {}
