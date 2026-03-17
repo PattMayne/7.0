@@ -107,13 +107,13 @@ blockquote {
 
 /*    CUSTOM classes  */
 
-#profile-pic {
+.profile-pic {
     width: 100%;
     padding: 0px;
     padding-bottom: 14px;
 }
 
-#profile-pic-tiny {
+.profile-pic-tiny {
     width: 100%;
     padding: 0px;
     padding-bottom: 10px;
