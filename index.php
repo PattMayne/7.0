@@ -51,7 +51,7 @@
                                     <img src="img/matt-1-BLUE.png" class="tiny-img">
                                     <img src="img/matt-1-RED.png" class="tiny-img">
                                     <div class="tiny-img">                                
-                                        <div class="inner-inner-img-grid">
+                                        <div class="inner-inner-inner-img-grid">
                                             <img src="img/matt-1-GRAY.png" class="tiny-img">
                                             <img src="img/matt-1-RED.png" class="tiny-img">
                                             <img src="img/matt-1-BLUE.png" class="tiny-img">
@@ -85,7 +85,7 @@
                                     <img src="img/matt-1-RED.png" class="tiny-img">
                                     <img src="img/matt-1-BLUE.png" class="tiny-img">
                                     <div class="tiny-img">                                
-                                        <div class="inner-inner-img-grid">
+                                        <div class="inner-inner-inner-img-grid">
                                             <img src="img/matt-1-GRAY.png" class="tiny-img">
                                             <img src="img/matt-1-BLUE.png" class="tiny-img">
                                             <img src="img/matt-1-RED.png" class="tiny-img">
