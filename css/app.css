@@ -148,6 +148,18 @@ blockquote {
     display: block;
 }
 
+.inner-inner-img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px; /* adjust as needed */
+    height: 100%; /* Fill parent */
+    padding-bottom: 0px;
+}
+
+
+
+
 .main-logo-cell {}
 
 .menu-button:focus {
