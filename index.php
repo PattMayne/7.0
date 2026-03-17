@@ -35,13 +35,18 @@
                         <img src="img/matt-1-YELLOW.png" id="profile-pic">
                     </div>
                     <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
-                        <img src="img/matt-1-GRAY.png" id="profile-pic">
+                        <img src="img/matt-1-BLUE.png" id="profile-pic">
                     </div>
                     <div class="small-3 large-6 medium-6 cell p-p-cell-L hide-for-small-only">
                         <img src="img/matt-1-RED.png" id="profile-pic">
                     </div>
                     <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
-                        <img src="img/matt-1-BLUE.png" id="profile-pic">
+                        <div class="inner-img-grid">
+                            <img src="img/matt-1-YELLOW.png" class="tiny-img">
+                            <img src="img/matt-1-RED.png" class="tiny-img">
+                            <img src="img/matt-1-BLUE.png" class="tiny-img">
+                            <img src="img/matt-1-GRAY.png" class="tiny-img">
+                        </div>
                     </div>
 
 
