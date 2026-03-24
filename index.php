@@ -32,7 +32,7 @@
 
                     <!-- DESKTOP PROFILE PICS -->
                     <div class="small-3 large-6 medium-6 cell p-p-cell-L hide-for-small-only">
-                        <img src="img/matt-1-YELLOW.png" class="profile-pic">
+                        <img src="img/pm_nobg_a.png" class="profile-pic">
                     </div>
                     <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
                         <img src="img/matt-1-BLUE.png" class="profile-pic">
@@ -66,7 +66,7 @@
 
                     <!-- MOBILE PROFILE PICS -->
                     <div class="small-3 large-6 medium-6 cell show-for-small-only">
-                        <img src="img/matt-1-YELLOW.png" class="profile-pic">
+                        <img src="img/pm_nobg_a.png" class="profile-pic">
                     </div>
                     <div class="small-3 large-6 medium-6 cell show-for-small-only">
                         <img src="img/matt-1-RED.png" class="profile-pic">
