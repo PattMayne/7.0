@@ -11,16 +11,17 @@
 
 <div class="grid-x grid-padding-x">
 
-    <div class="large-12 cell" id="title_box">
-        <h3 id="the_title">THE MATT PAYNE WEB PAGE</h3>
-    </div>
-
     <div class="large-12 cell">
-        <a href="/" class="button menu-button <?php echo isActive('about') ? 'active' : ''; ?>">ABOUT</a>
-        <a href="/books" class="button menu-button <?php echo isActive('books') ? 'active' : ''; ?>">BOOKS</a>
-        <a href="/audio" class="button menu-button <?php echo isActive('audio') ? 'active' : ''; ?>">AUDIO</a>
-        <a href="/blog" class="button menu-button <?php echo isActive('blog') ? 'active' : ''; ?>">BLOG</a>
-        <div class="hr hide-for-small-only">&nbsp;</div>
+        <div id="title_box">
+            <h3 id="the_title">THE MATT PAYNE WEB PAGE</h3>
+        </div>
+        <div id="menu_box">
+            <a href="/" class="button menu-button <?php echo isActive('about') ? 'active' : ''; ?>">ABOUT</a>
+            <a href="/books" class="button menu-button <?php echo isActive('books') ? 'active' : ''; ?>">BOOKS</a>
+            <a href="/audio" class="button menu-button <?php echo isActive('audio') ? 'active' : ''; ?>">AUDIO</a>
+            <a href="/blog" class="button menu-button <?php echo isActive('blog') ? 'active' : ''; ?>">BLOG</a>
+            <div class="hr hide-for-small-only">&nbsp;</div>
+        </div>
     </div>
 
 </div>
