@@ -26,7 +26,8 @@
 
 body {
     background-color: #fff;
-    background-image: url(../img/wall.png);
+    /* background-image: url(../img/wall.png); */
+    background-image: url(../img/screen_BG_indexed.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
