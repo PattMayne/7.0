@@ -41,6 +41,7 @@ h2 {
 }
 
 
+
 h3,
 h4,
 h5,
@@ -99,7 +100,7 @@ blockquote {
 
 
 .callout.primary {
-    background: #fff;
+    background: #c6c6c6;
     border: none;
     color: #000;
     border: 1px solid #111;
@@ -180,7 +181,7 @@ blockquote {
 
 .menu-button {
     border-color: #111;
-    background-color: #fefefe;
+    background-color: #d3d3d3;
     color: #111;
     border: 1px solid transparent;
 }
@@ -195,7 +196,7 @@ blockquote {
 }
 
 .active {
-    color: #e90000;
+    color: #bc0000;
 
     @media (max-width: 640px) {
         border: 1px solid #111;
@@ -388,7 +389,7 @@ blockquote {
     font-family: alte;
     font-size: small;
     display: inline-block;
-    background-color: #ccc;
+    background-color: #eaeaea;
     color: #000;
     padding: 0px 4px;
 }
@@ -430,7 +431,7 @@ blockquote {
 }
 
 .book_callout{
-    background-color: #f0f0f0;
+    background-color: #c6c6c6;
     border: 1px solid #000;
     margin-bottom: 0px;
 }
@@ -517,8 +518,8 @@ blockquote {
 
 #the_title {
     font-family: alte-bold;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.7);
+    color: #d3d3d3;
+    /* background-color: rgba(255, 255, 255, 0.7); */
     display: inline-block;
     margin-top: 10px;
     padding-left: 6px;
@@ -526,6 +527,7 @@ blockquote {
 }
 
 #footer-text {
+    color: #d3d3d3!important;
     font-size: 18px;
     color: black;
     text-align: right;
@@ -533,7 +535,7 @@ blockquote {
 }
 
 #more_books {
-    background-color: rgba(255, 255, 255, 0.7);
+    /* background-color: rgba(255, 255, 255, 0.7); */
     display: inline-block;
     padding-left: 6px;
     padding-right: 6px;
@@ -586,6 +588,10 @@ blockquote {
     visibility: hidden;
 }
 
+.post_title {
+    color: #4961c0;
+}
+
 #posts_list_box {
     border: 1px solid #111;
     display: inline-block;       /* Make the div shrink to fit content */
@@ -636,7 +642,7 @@ blockquote {
     padding: 10px;
     width: 700px;
     max-width: 700px;
-    background-color: #f1eeeb;
+    background-color: #d6d3d1;
     border: 1px solid #111;
 
     @media (max-width: 700px) {
@@ -679,7 +685,7 @@ blockquote {
 
 
 .bottom_link {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 3px;
-    color: black;
+    color: rgb(162, 162, 162);
 }
