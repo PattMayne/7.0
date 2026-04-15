@@ -26,6 +26,14 @@
 }
 
 
+@font-face {
+    font-family: nimbus;
+    src: url(../fonts/nimbus.otf);
+}
+
+
+
+
 /*    HTML elements  */
 
 body {
@@ -61,10 +69,8 @@ a,
 li,
 input {
     font-family:
+        nimbus,
         alte,
-        Roboto,
-        "Helvetica Neue",
-        Helvetica,
         Arial,
         sans-serif;
 }
