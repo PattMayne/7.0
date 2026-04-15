@@ -17,7 +17,7 @@
         </div>
         <div id="menu_box">
             <a href="/" class="button menu-button <?php echo isActive('about') ? 'active' : ''; ?>">ABOUT</a>
-            <a href="/books" class="button menu-button <?php echo isActive('books') ? 'active' : ''; ?>">BOOKS</a>
+            <a href="/books" class="button menu-button <?php echo (isActive('books') || isActive('single')) ? 'active' : ''; ?>">BOOKS</a>
             <a href="/audio" class="button menu-button <?php echo isActive('audio') ? 'active' : ''; ?>">AUDIO</a>
             <a href="/blog" class="button menu-button <?php echo isActive('blog') ? 'active' : ''; ?>">BLOG</a>
             <div class="hr hide-for-small-only">&nbsp;</div>

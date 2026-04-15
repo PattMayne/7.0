@@ -28,7 +28,7 @@
         <div class="book-container">
             <div class="book-details">
 
-                <<?php echo $title_heading_size; ?> class="book-title <?php if ($page == 'single') {echo ' section-title-text';}  ?>" >
+                <<?php echo $title_heading_size; ?> class="book-title <?php if ($page == 'single') {echo ' solo-title-text';}  ?>" >
                     <?php echo $title; ?>
                 </<?php echo $title_heading_size; ?>>
 
