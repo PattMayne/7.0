@@ -21,28 +21,6 @@
 }
 
 @font-face {
-    font-family: amaz_doom_outline;
-    src: url(../fonts/amaz_doom_outline.ttf);
-}
-
-@font-face {
-    font-family: amaz_doom_outline_left;
-    src: url(../fonts/amaz_doom_outline_left.ttf);
-}
-
-@font-face {
-    font-family: amaz_doom_solid;
-    src: url(../fonts/amaz_doom_solid.ttf);
-}
-
-
-@font-face {
-    font-family: amaz_doom_solid_left;
-    src: url(../fonts/amaz_doom_solid_left.ttf);
-}
-
-
-@font-face {
     font-family: pirata_one;
     src: url(../fonts/pirata_one.ttf);
 }
