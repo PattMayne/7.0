@@ -20,6 +20,18 @@
     src: url(../fonts/LinLibertine_R.ttf);
 }
 
+@font-face {
+    font-family: amaz_doom_outline;
+    src: url(../fonts/amaz_doom.ttf);
+}
+
+@font-face {
+    font-family: amaz_doom_solid;
+    src: url(../fonts/amaz_doom_solid.ttf);
+}
+
+
+
 
 
 /*    HTML elements  */
@@ -517,13 +529,15 @@ blockquote {
 }
 
 #the_title {
-    font-family: alte-bold;
-    color: #e16213;
+    font-family: amaz_doom_outline;
+    color: #ffc637;
+    /* color: #e45700; */
     /* background-color: rgba(255, 255, 255, 0.7); */
     display: inline-block;
     margin-top: 10px;
     padding-left: 6px;
     padding-right: 6px;
+    /* -webkit-text-stroke: 1px #bf7f00; */
 }
 
 #footer-text {
