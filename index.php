@@ -55,21 +55,21 @@
                                             <img src="img/cool_bro_C.jpg" class="tiny-img">
                                             <img src="img/cool_bro_B.jpg" class="tiny-img">
                                             <img src="img/cool_bro_A.jpg" class="tiny-img">
-                                                                        <div class="tiny-img">                                
-                                <div class="inner-inner-inner-img-grid">
-                                    <img src="img/cool_bro_C.jpg" class="tiny-img">
-                                    <img src="img/cool_bro_A.jpg" class="tiny-img">
-                                    <img src="img/cool_bro_B.jpg" class="tiny-img">
-                                    <div class="tiny-img">                                
-                                        <div class="inner-inner-inner-img-grid">
-                                            <img src="img/cool_bro_GRAY.jpg" class="tiny-img">
-                                            <img src="img/cool_bro_B.jpg" class="tiny-img">
-                                            <img src="img/cool_bro_A.jpg" class="tiny-img">
-                                            <img src="img/cool_bro_C.jpg" class="tiny-img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                            <div class="tiny-img">                                
+                                                <div class="inner-inner-inner-img-grid">
+                                                    <img src="img/cool_bro_C.jpg" class="tiny-img">
+                                                    <img src="img/cool_bro_A.jpg" class="tiny-img">
+                                                    <img src="img/cool_bro_B.jpg" class="tiny-img">
+                                                    <div class="tiny-img">                                
+                                                        <div class="inner-inner-inner-inner-img-grid">
+                                                            <img src="img/cool_bro_GRAY.jpg" class="tiny-img">
+                                                            <img src="img/cool_bro_B.jpg" class="tiny-img">
+                                                            <img src="img/cool_bro_A.jpg" class="tiny-img">
+                                                            <img src="img/cool_bro_C.jpg" class="tiny-img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
