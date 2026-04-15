@@ -13,7 +13,7 @@
 
     <div class="large-12 cell">
         <div id="title_box">
-            <h2 id="the_title">THE MATT PAYNE WEB PAGE</h2>
+            <h2 id="the_title"><span id="title_left">THE</span> MATT PAYNE <span id="title_right">WEB PAGE</span></h2>
         </div>
         <div id="menu_box">
             <a href="/" class="button menu-button <?php echo isActive('about') ? 'active' : ''; ?>">ABOUT</a>

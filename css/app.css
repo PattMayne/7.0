@@ -22,7 +22,12 @@
 
 @font-face {
     font-family: amaz_doom_outline;
-    src: url(../fonts/amaz_doom.ttf);
+    src: url(../fonts/amaz_doom_outline.ttf);
+}
+
+@font-face {
+    font-family: amaz_doom_outline_left;
+    src: url(../fonts/amaz_doom_outline_left.ttf);
 }
 
 @font-face {
@@ -32,10 +37,9 @@
 
 
 @font-face {
-    font-family: shaxizor;
-    src: url(../fonts/shaxizor.ttf);
+    font-family: amaz_doom_solid_left;
+    src: url(../fonts/amaz_doom_solid_left.ttf);
 }
-
 
 
 /*    HTML elements  */
@@ -547,6 +551,15 @@ blockquote {
     @media (max-width: 420px) {
         font-size: 41px;
     }
+}
+
+#title_right {
+    font-family: amaz_doom_solid_left;
+    color: #007ede;
+}
+
+#title_left {
+    font-family: amaz_doom_outline;
 }
 
 #footer-text {
