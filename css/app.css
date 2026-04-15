@@ -71,7 +71,6 @@ input {
     font-family:
         nimbus,
         alte,
-        Arial,
         sans-serif;
 }
 
@@ -684,8 +683,12 @@ blockquote {
 /* BLOG ARTICLE STYLING */
 
   .article, .article p {
-    font-family: nimbus, sans-serif, Arial, 'libertine', 'alte';
+    font-family: nimbus, sans-serif, 'libertine', 'alte';
     font-size: x-large;
+
+    @media (max-width: 700px) {
+        font-size: medium;
+    }
   }
 
   #article_container {
