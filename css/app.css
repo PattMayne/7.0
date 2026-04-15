@@ -61,9 +61,10 @@ a,
 li,
 input {
     font-family:
+        alte,
+        Roboto,
         "Helvetica Neue",
         Helvetica,
-        Roboto,
         Arial,
         sans-serif;
 }
@@ -218,7 +219,7 @@ blockquote {
 }
 
 .bold-text {
-    font-weight: 600;
+    font-family: alte-bold;
 }
 
 .button-box {
