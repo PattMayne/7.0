@@ -32,8 +32,6 @@
 
 
 
-
-
 /*    HTML elements  */
 
 body {
@@ -530,18 +528,18 @@ blockquote {
 
 #the_title {
     font-family: amaz_doom_outline;
-    color: #ffc637;
+    color: #ff7520;
     /* color: #e45700; */
     /* background-color: rgba(255, 255, 255, 0.7); */
     display: inline-block;
     margin-top: 10px;
     padding-left: 6px;
     padding-right: 6px;
-    font-size: 50px;
+    font-size: 55px;
     /* -webkit-text-stroke: 1px #bf7f00; */
 
     @media (max-width: 420px) {
-        font-size: 37px;
+        font-size: 41px;
     }
 }
 
