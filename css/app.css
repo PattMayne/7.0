@@ -31,6 +31,12 @@
 }
 
 
+@font-face {
+    font-family: shaxizor;
+    src: url(../fonts/shaxizor.ttf);
+}
+
+
 
 /*    HTML elements  */
 
@@ -527,8 +533,8 @@ blockquote {
 }
 
 #the_title {
-    font-family: amaz_doom_outline;
-    color: #ffc038;
+    font-family: amaz_doom_solid;
+    color: #de8200;
     /* color: #e45700; */
     /* background-color: rgba(255, 255, 255, 0.7); */
     display: inline-block;
