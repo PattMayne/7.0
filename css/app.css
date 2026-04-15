@@ -42,6 +42,12 @@
 }
 
 
+@font-face {
+    font-family: pirata_one;
+    src: url(../fonts/pirata_one.ttf);
+}
+
+
 /*    HTML elements  */
 
 body {
@@ -538,7 +544,7 @@ blockquote {
 }
 
 #the_title {
-    font-family: amaz_doom_solid;
+    font-family: pirata_one;
     color: #de8200;
     /* color: #e45700; */
     /* background-color: rgba(255, 255, 255, 0.7); */
@@ -547,6 +553,7 @@ blockquote {
     padding-left: 6px;
     padding-right: 6px;
     font-size: 55px;
+    text-transform: none;
     /* -webkit-text-stroke: 1px #bf7f00; */
 
     @media (max-width: 420px) {
@@ -555,12 +562,11 @@ blockquote {
 }
 
 #title_right {
-    font-family: amaz_doom_solid_left;
     color: #007ede;
 }
 
 #title_left {
-    font-family: amaz_doom_outline;
+    color: #007ede;
 }
 
 #footer-text {
