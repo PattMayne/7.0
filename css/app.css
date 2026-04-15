@@ -556,8 +556,16 @@ blockquote {
     text-transform: none;
     /* -webkit-text-stroke: 1px #bf7f00; */
 
-    @media (max-width: 420px) {
+    @media (max-width: 535px) {
         font-size: 41px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 36px;
+    }
+        
+    @media (max-width: 350px) {
+        font-size: 33px;
     }
 }
 
