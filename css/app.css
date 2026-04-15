@@ -216,7 +216,8 @@ blockquote {
 }
 
 .active {
-    color: #bc0000;
+    color: #111;
+    background-color: #007ede;
 
     @media (max-width: 640px) {
         border: 1px solid #111;
@@ -625,7 +626,7 @@ blockquote {
 }
 
 .post_title {
-    color: #4961c0;
+    color: #007ede;
 }
 
 #posts_list_box {
