@@ -115,7 +115,7 @@
 
 
                     <div class="large-12 cell">
-                        <div class="callout primary">
+                        <div class="callout">
                             
                             <p class="bold-text">Matt Payne writes novels of comedy, satire, and adventure.</p>
 
