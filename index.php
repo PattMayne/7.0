@@ -32,30 +32,44 @@
 
                     <!-- DESKTOP PROFILE PICS -->
                     <div class="small-3 large-6 medium-6 cell p-p-cell-L hide-for-small-only">
-                        <img src="img/matt-1-YELLOW.png" class="profile-pic">
+                        <img src="img/cool_bro_C.jpg" class="profile-pic">
                     </div>
                     <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
-                        <img src="img/matt-1-BLUE.png" class="profile-pic">
+                        <img src="img/cool_bro_A.jpg" class="profile-pic">
                     </div>
                     <div class="small-3 large-6 medium-6 cell p-p-cell-L hide-for-small-only">
-                        <img src="img/matt-1-RED.png" class="profile-pic">
+                        <img src="img/cool_bro_B.jpg" class="profile-pic">
                     </div>
                     <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
                         <div class="inner-img-grid">
-                            <img src="img/matt-1-YELLOW.png" class="tiny-img">
-                            <img src="img/matt-1-RED.png" class="tiny-img">
-                            <img src="img/matt-1-BLUE.png" class="tiny-img">
+                            <img src="img/cool_bro_C.jpg" class="tiny-img">
+                            <img src="img/cool_bro_B.jpg" class="tiny-img">
+                            <img src="img/cool_bro_A.jpg" class="tiny-img">
                             <div class="tiny-img">                                
                                 <div class="inner-inner-img-grid">
-                                    <img src="img/matt-1-YELLOW.png" class="tiny-img">
-                                    <img src="img/matt-1-BLUE.png" class="tiny-img">
-                                    <img src="img/matt-1-RED.png" class="tiny-img">
+                                    <img src="img/cool_bro_C.jpg" class="tiny-img">
+                                    <img src="img/cool_bro_A.jpg" class="tiny-img">
+                                    <img src="img/cool_bro_B.jpg" class="tiny-img">
                                     <div class="tiny-img">                                
                                         <div class="inner-inner-inner-img-grid">
-                                            <img src="img/matt-1-GRAY.png" class="tiny-img">
-                                            <img src="img/matt-1-RED.png" class="tiny-img">
-                                            <img src="img/matt-1-BLUE.png" class="tiny-img">
-                                            <img src="img/matt-1-YELLOW.png" class="tiny-img">
+                                            <img src="img/cool_bro_C.jpg" class="tiny-img">
+                                            <img src="img/cool_bro_B.jpg" class="tiny-img">
+                                            <img src="img/cool_bro_A.jpg" class="tiny-img">
+                                                                        <div class="tiny-img">                                
+                                <div class="inner-inner-inner-img-grid">
+                                    <img src="img/cool_bro_C.jpg" class="tiny-img">
+                                    <img src="img/cool_bro_A.jpg" class="tiny-img">
+                                    <img src="img/cool_bro_B.jpg" class="tiny-img">
+                                    <div class="tiny-img">                                
+                                        <div class="inner-inner-inner-img-grid">
+                                            <img src="img/cool_bro_GRAY.jpg" class="tiny-img">
+                                            <img src="img/cool_bro_B.jpg" class="tiny-img">
+                                            <img src="img/cool_bro_A.jpg" class="tiny-img">
+                                            <img src="img/cool_bro_C.jpg" class="tiny-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                                         </div>
                                     </div>
                                 </div>
