@@ -220,7 +220,7 @@ blockquote {
     background-color: #007ede;
 
     @media (max-width: 640px) {
-        border: 1px solid #111;
+        border: 1px solid #007ede;
     }
 }
 
