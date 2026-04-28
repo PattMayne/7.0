@@ -117,11 +117,11 @@
                     <div class="large-12 cell">
                         <div class="callout">
                             
-                            <p class="bold-text">I'm Matt Payne and these are my books. I write comedy, satire, and adventure.</p>
+                            <p class="bold-text">Tales of mania and obsession!</p>
 
-                            <p>My stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3, and elswhere.</p>
+                            <p>I'm Matt Payne and these are my books. We are the select few who appreciate the pleasures of insanity. So my books are for you. My stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3, and elswhere.</p>
 
-                            <p>If you want to join my newsletter to find out when I release new books, subscribe to my free <a href="https://pattmayne.substack.com" target="blank"><b>Substack</b></a>.</p>
+                            <p>STAY INFORMED: Newsletter on <a href="https://pattmayne.substack.com" target="blank"><b>Substack</b></a>.</p>
 
                             <div class="social_button_container">
                                 <a class="button social" href="https://pattmayne.substack.com" target="blank">

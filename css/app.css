@@ -52,8 +52,6 @@ h2 {
     font-family: alte-bold;
 }
 
-
-
 h3,
 h4,
 h5,
@@ -744,4 +742,13 @@ blockquote {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 3px;
     color: rgb(162, 162, 162);
+}
+
+.hidden {
+  display: none;
+}
+
+
+.no_display {
+  display: none!important;
 }
