@@ -117,7 +117,7 @@
                     <div class="large-12 cell">
                         <div class="callout">
                             
-                            <h5 class="bold-text">Tales of mania and obsession!</h5>
+                            <h6 class="bold-text">Tales of mania & obsession!</h6>
 
                             <p class="bold-text">I'm Matt Payne and these are my books. We are the select few who appreciate the pleasures of insanity. So these books are for you.</p>
                             <p>My stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3, and elswhere.</p>
