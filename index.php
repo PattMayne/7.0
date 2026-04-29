@@ -114,9 +114,9 @@
                     <div class="large-12 cell">
                         <div class="callout">
                             
-                            <h5 class="bold-text">Tales of mania & obsession!</h5>
+                            <h5 class="bold-text">Tales of mania, paranoia, & obsession</h5>
 
-                            <p><span class="bold-text">I'm Matt Payne and these are my books.</span><br/>We are the select few who appreciate the joy of madness. So these books are for you.</p>
+                            <p class="bold-text">I'm Matt Payne and these are my books.</p>
                             <p>My stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3, and elswhere.</p>
 
                             <p>STAY INFORMED: Newsletter on <a href="https://pattmayne.substack.com" target="blank"><b>Substack</b></a>.</p>
