@@ -52,7 +52,7 @@ const cycle_guy = () => {
         phase = phases[2]
         guy_is_cool = true
         conguy.src = get_guy()
-        dotted_lines = false
+        dotted_lines = true
     } else {
         // resetting the guy
         phase = phases[0]

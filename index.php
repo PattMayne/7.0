@@ -35,12 +35,16 @@
                         <canvas id="uncube_canvas_desktop" class="hide-for-small-only" width="400" height="400">
                         </canvas>
                     </div>
+
+                    <!-- removing these, but keeping the elements in case I want to reintroduce them -->
                     <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
                         <img src="img/cool_bro_A.jpg" class="profile-pic">
                     </div>
                     <div class="small-3 large-6 medium-6 cell p-p-cell-L hide-for-small-only">
                         <img src="img/cool_bro_B.jpg" class="profile-pic">
                     </div>
+                    <!-- END of removed parts -->
+
                     <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
                         <div class="inner-img-grid">
                             <img src="img/cool_bro_C.jpg" class="tiny-img">
@@ -115,9 +119,6 @@
 
                     <div class="large-12 cell">
                         <div class="callout">
-                            
-                            <h5 class="bold-text">Beautiful Tales of mania, paranoia, & obsession</h5>
-
                             <p class="bold-text">I'm Matt Payne and these are my books.</p>
                             <p>My stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3, and elswhere.</p>
 

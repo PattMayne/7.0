@@ -563,6 +563,18 @@ blockquote {
     }
 }
 
+.white_text {
+    color: #d3d3d3;
+}
+
+.blue_text {
+    color: #007ede;
+}
+
+.orange_text {
+    color: #de8200;
+}
+
 #title_right {
     color: #007ede;
 }
@@ -759,7 +771,10 @@ blockquote {
     aspect-ratio: 1 / 1;
     height: auto;
     object-fit: cover;
-    background: transparent;
+    background-image: url('../img/coolguy_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: block;
 }
 
