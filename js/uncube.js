@@ -1,16 +1,25 @@
 // Access the canvas element and its 2D rendering context
-const canvas = document.getElementById("uncube_canvas_desktop") // Get the canvas element by its ID
-const width = canvas.width // Canvas width
-const height = canvas.height // Canvas height
-const ctx = canvas.getContext("2d") // 2D drawing context
-ctx.strokeStyle = "#00ff10"  // Set the color for the line
-ctx.lineWidth = 3  // Set the width of the line
+const canvas_desktop = document.getElementById("uncube_canvas_desktop")
+const canvas_mobile = document.getElementById("uncube_canvas_mobile")
+const width = canvas_desktop.width // Canvas width
+const height = canvas_desktop.height // Canvas height
+
+const ctx_desktop = canvas_desktop.getContext("2d") // 2D drawing context
+const ctx_mobile = canvas_mobile.getContext("2d") // 2D drawing context
+
+ctx_desktop.strokeStyle = "#00ff10"  // Set the color for the line
+ctx_desktop.lineWidth = 3  // Set the width of the line
+
+ctx_mobile.strokeStyle = "#00ff10"  // Set the color for the line
+ctx_mobile.lineWidth = 2  // Set the width of the line
+
+const isVisible = (elem) => window.getComputedStyle(elem).display !== 'none'
 
 const img_draw_data = {
-    x: canvas.width / 4,
-    y: canvas.height / 4,
-    width: canvas.width / 2,
-    height: canvas.height / 2
+    x: canvas_desktop.width / 4,
+    y: canvas_desktop.height / 4,
+    width: canvas_desktop.width / 2,
+    height: canvas_desktop.height / 2
 }
 
 let fake_tilt = true
@@ -30,24 +39,16 @@ const switch_guy = () => {
     dotted_lines = !dotted_lines
 }
 
-canvas.addEventListener("click", switch_guy)
+canvas_desktop.addEventListener("click", switch_guy)
+canvas_mobile.addEventListener("click", switch_guy)
 
 const timeout = 60 // Timeout for animation update
 const f = 500  // Focal length for 3D projection (larger values make objects smaller)
 const D = 410  // Distance from the viewer (larger values make objects appear smaller)
 
-const clearScreen = () => ctx.clearRect(0, 0, width, height) // Clear the canvas to prepare for the next frame
+const clearScreen = ctx => ctx.clearRect(0, 0, width, height) // Clear the canvas to prepare for the next frame
 
-function point(x, y, radius = 5, color = "white") {
-    ctx.fillStyle = color  // Set the color for the point
-    ctx.beginPath()  // Start a new drawing path
-    ctx.arc(x, y, radius, 0, 2 * Math.PI, true)  // Draw a circle (point) at (x, y)
-    ctx.fill()  // Fill the circle with the chosen color
-    ctx.closePath()  // Close the drawing path
-}
-
-
-function line(x1, y1, x2, y2) {
+function line(ctx, x1, y1, x2, y2) {
     ctx.beginPath()  // Start a new drawing path
     ctx.moveTo(x1, y1)  // Move to the start point
     ctx.lineTo(x2, y2)  // Draw a line to the end point
@@ -67,12 +68,6 @@ class vector {
     // Convert a 3D point to a 2D point for drawing
     get_point2d() {
         return project3Dto2D(this.x, this.y, this.z)
-    }
-
-    // Draw the point on the canvas
-    draw() {
-        const pt2d = this.get_point2d() // Get the 2D coordinates
-        point(pt2d.x, pt2d.y) // Draw the point on the canvas
     }
 
     // Rotate the vector around the X-axis
@@ -131,7 +126,7 @@ class model {
     }
 
     // Draw the model on the canvas
-    draw() {
+    draw(ctx) {
 
         // First, draw the points (actually skip this)
         false && this.points.forEach(this_point => this_point.draw()) // Draw each point using the draw method from the vector class
@@ -141,7 +136,7 @@ class model {
             if (this_edge[0].z < 0 && this_edge[1].z < 0) return
             const start = this_edge[0].get_point2d() // Start point of the edge
             const end = this_edge[1].get_point2d() // End point of the edge
-            line(start.x, start.y, end.x, end.y) // Draw the line between the two points
+            line(ctx, start.x, start.y, end.x, end.y) // Draw the line between the two points
         })
 
         // draw face
@@ -158,7 +153,7 @@ class model {
             if (this_edge[0].z < 5 || this_edge[1].z < 5) {                
                 const start = this_edge[0].get_point2d() // Start point of the edge
                 const end = this_edge[1].get_point2d() // End point of the edge
-                line(start.x, start.y, end.x, end.y) // Draw the line between the two points
+                line(ctx, start.x, start.y, end.x, end.y) // Draw the line between the two points
             }
         })
 
@@ -167,7 +162,7 @@ class model {
             this.dotted_edges.forEach(this_edge => {
                 const start = this_edge[0].get_point2d() // Start point of the edge
                 const end = this_edge[1].get_point2d() // End point of the edge
-                line(start.x, start.y, end.x, end.y) // Draw the line between the two points
+                line(ctx, start.x, start.y, end.x, end.y) // Draw the line between the two points
             })
             ctx.setLineDash([]); // Reset to solid line
         }
@@ -308,22 +303,20 @@ const partial_inner_edges = [
 ]
 
 
-!guy_is_cool && edges.push(...inner_edges)
-
-
 // Create the model using the points and edges defined above
 const mdl = new model("cube", points, edges, inner_edges)
 mdl.scale(1)  // Initial scaling of the model
 
 // Function to update the canvas, clear the screen, and draw the model
 function update() {
-    clearScreen() // Clear the screen before drawing
+    let context = isVisible(canvas_desktop) ? ctx_desktop : ctx_mobile
+    clearScreen(context) // Clear the screen before drawing
 
     // rotate and draw the model
     mdl.rotateY(5)
     mdl.rotateZ(-0.5)
     mdl.rotateX(0.4)
-    mdl.draw()
+    mdl.draw(context)
 
     // Continuously update the canvas at the specified timeout interval
     setTimeout(update, timeout)

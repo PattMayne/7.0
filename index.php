@@ -32,13 +32,7 @@
 
                     <!-- DESKTOP PROFILE PICS -->
                     <div class="small-3 large-6 medium-6 cell p-p-cell-L hide-for-small-only">
-                        <canvas id="uncube_canvas_desktop" width="400" height="400" style="
-                            background: transparent;
-                            background-image: url('./img/coolguy_bg.png');
-                            background-size: cover;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            display: block;">
+                        <canvas id="uncube_canvas_desktop" class="hide-for-small-only" width="400" height="400">
                         </canvas>
                     </div>
                     <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
@@ -116,6 +110,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="large-12 cell show-for-small-only">
+                        <canvas id="uncube_canvas_mobile" width="400" height="400">
+                        </canvas>
                     </div>
 
                     <div class="large-12 cell">
