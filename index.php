@@ -129,8 +129,8 @@
                     </div>
 
                     <div class="large-12 cell">
+                        <h5 class="bold-text orange_text">My books are very funny</h5>
                         <div class="callout">
-                            <h5 class="bold-text">My books are very funny</h5>
                             <p class="bold-text">I'm Matt Payne and these are my books.</p>
                             <p>My stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3, and elswhere.</p>
 
