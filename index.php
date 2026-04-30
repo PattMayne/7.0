@@ -116,7 +116,7 @@
                     <div class="large-12 cell">
                         <div class="callout">
                             
-                            <h5 class="bold-text">Tales of mania, paranoia, & obsession</h5>
+                            <h5 class="bold-text">Beautiful Tales of mania, paranoia, & obsession</h5>
 
                             <p class="bold-text">I'm Matt Payne and these are my books.</p>
                             <p>My stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3, and elswhere.</p>
