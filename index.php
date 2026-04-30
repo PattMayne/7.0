@@ -36,16 +36,23 @@
                         </canvas>
                     </div>
 
-                    <!-- removing these, but keeping the elements in case I want to reintroduce them -->
-                    <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
+                    <div
+                        class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only hidden"
+                        id="one_guy"
+                    >
                         <img src="img/cool_bro_A.jpg" class="profile-pic">
                     </div>
-                    <div class="small-3 large-6 medium-6 cell p-p-cell-L hide-for-small-only">
+
+                    <!-- removing this, but keeping the element in case I want to reintroduce it -->
+                    <div class="small-3 large-6 medium-6 cell p-p-cell-L hide-for-small-only hidden">
                         <img src="img/cool_bro_B.jpg" class="profile-pic">
                     </div>
                     <!-- END of removed parts -->
 
-                    <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
+                    <div
+                        class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only"
+                        id="many_guys"
+                    >
                         <div class="inner-img-grid">
                             <img src="img/cool_bro_C.jpg" class="tiny-img">
                             <img src="img/cool_bro_B.jpg" class="tiny-img">
