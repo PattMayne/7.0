@@ -773,9 +773,5 @@ blockquote {
     height: auto;
     object-fit: cover;
     background: transparent;
-    background-image: url('../img/coolguy_bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     display: block;
 }

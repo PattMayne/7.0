@@ -7,11 +7,11 @@ const height = canvas_desktop.height // Canvas height
 const ctx_desktop = canvas_desktop.getContext("2d") // 2D drawing context
 const ctx_mobile = canvas_mobile.getContext("2d") // 2D drawing context
 
-ctx_desktop.strokeStyle = "#00ff10"  // Set the color for the line
-ctx_desktop.lineWidth = 3  // Set the width of the line
+ctx_desktop.strokeStyle = "#00ff10"
+ctx_desktop.lineWidth = 3
 
-ctx_mobile.strokeStyle = "#00ff10"  // Set the color for the line
-ctx_mobile.lineWidth = 2  // Set the width of the line
+ctx_mobile.strokeStyle = "#00ff10"
+ctx_mobile.lineWidth = 3
 
 const isVisible = (elem) => window.getComputedStyle(elem).display !== 'none'
 
