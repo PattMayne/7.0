@@ -130,6 +130,8 @@
 
                     <div class="large-12 cell">
                         <h5 class="bold-text orange_text">My books are very funny</h5>
+                        <p class="white_text">Well the horror and adventure stories are horrifying and adventurous, and sometimes funny. But the comedic books are <span class="bold-text blue_text">always funny</span>.</p>
+                        <h6 class="orange_text">Exciting tales of mania and obsession</h6>
                         <div class="callout">
                             <p class="bold-text">I'm Matt Payne and these are my books.</p>
                             <p>My stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3, and elswhere.</p>
