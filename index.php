@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="pragma" content="no-cache" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pattmayne.com 7.4</title>
+    <title>pattmayne.com 7.7</title>
     <link rel="icon" href="img/guy_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css?ts=<?=time()?>">
@@ -130,6 +130,7 @@
 
                     <div class="large-12 cell">
                         <div class="callout">
+                            <h5 class="bold-text">My books are very funny</h5>
                             <p class="bold-text">I'm Matt Payne and these are my books.</p>
                             <p>My stories have appeared in Futurist Letters, Qwerty Magazine, Depraved Desires 2, The Society of Misfit Stories 3, and elswhere.</p>
 
