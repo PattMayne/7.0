@@ -28,9 +28,8 @@ const tilt = 0.2
 let guy_is_cool = true
 let dotted_lines = false
 
-//const conguy = document.getElementById("./img/conguy.png")
 let conguy = new Image();
-//conguy.src = "./img/coolconguy.png"
+
 conguy.src = guy_is_cool ? "./img/coolconguy.png" : "./img/conguy.png"
 
 const switch_guy = () => {
@@ -54,7 +53,6 @@ function line(ctx, x1, y1, x2, y2) {
     ctx.lineTo(x2, y2)  // Draw a line to the end point
     ctx.stroke()  // Apply the stroke to render the line
 }
-
 
 // the vector class to represent a 3D vector (point)
 class vector {

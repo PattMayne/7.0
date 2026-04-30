@@ -81,7 +81,8 @@
 
                     <!-- MOBILE PROFILE PICS -->
                     <div class="small-3 large-6 medium-6 cell show-for-small-only">
-                        <img src="img/cool_bro_C.jpg" class="profile-pic">
+                        <canvas id="uncube_canvas_mobile" width="400" height="400">
+                        </canvas>
                     </div>
                     <div class="small-3 large-6 medium-6 cell show-for-small-only">
                         <img src="img/cool_bro_A.jpg" class="profile-pic">
@@ -113,8 +114,7 @@
                     </div>
 
                     <div class="large-12 cell show-for-small-only">
-                        <canvas id="uncube_canvas_mobile" width="400" height="400">
-                        </canvas>
+                        
                     </div>
 
                     <div class="large-12 cell">
