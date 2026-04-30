@@ -3,15 +3,21 @@ $(document).foundation()
 // one guy vs many guys
 const one_guy = document.getElementById("one_guy")
 const many_guys = document.getElementById("many_guys")
+const small_one_guy = document.getElementById("small_one_guy")
+const small_many_guys = document.getElementById("small_many_guys")
 let show_one_guy = false
 
 const set_guys = () => {
   if (show_one_guy) {
     one_guy.classList.remove("hidden")
     many_guys.classList.add("hidden")
+    small_one_guy.classList.remove("hidden")
+    small_many_guys.classList.add("hidden")
   } else {
     one_guy.classList.add("hidden")
     many_guys.classList.remove("hidden")
+    small_one_guy.classList.add("hidden")
+    small_many_guys.classList.remove("hidden")
   }
 }
 
@@ -23,7 +29,8 @@ const switch_show_guys = () => {
 
 one_guy.addEventListener('click', switch_show_guys)
 many_guys.addEventListener('click', switch_show_guys)
-
+small_one_guy.addEventListener('click', switch_show_guys)
+small_many_guys.addEventListener('click', switch_show_guys)
 
 const container = document.getElementById("front_books_grid")
 let book_items = Array.from(container.children)

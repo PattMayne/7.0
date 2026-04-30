@@ -97,7 +97,11 @@
                         </canvas>
                     </div>
 
-                    <div class="small-6 cell show-for-small-only">
+                    <div class="small-6 cell show-for-small-only hidden" id="small_one_guy">
+                        <img src="img/cool_bro_A.jpg" class="profile-pic">
+                    </div>
+
+                    <div class="small-6 cell show-for-small-only" id="small_many_guys">
                         <div class="inner-img-grid">
                             <img src="img/cool_bro_C.jpg" class="tiny-img">
                             <img src="img/cool_bro_B.jpg" class="tiny-img">
