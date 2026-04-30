@@ -32,7 +32,14 @@
 
                     <!-- DESKTOP PROFILE PICS -->
                     <div class="small-3 large-6 medium-6 cell p-p-cell-L hide-for-small-only">
-                        <img src="img/cool_bro_C.jpg" class="profile-pic">
+                        <canvas id="uncube_canvas_desktop" width="400" height="400" style="
+                            background: transparent;
+                            background-image: url('./img/coolguy_bg.png');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            display: block;">
+                        </canvas>
                     </div>
                     <div class="small-3 large-6 medium-6 cell p-p-cell-R hide-for-small-only">
                         <img src="img/cool_bro_A.jpg" class="profile-pic">
@@ -237,6 +244,7 @@ if (file_exists('./data/books.xml')) {
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="../js/about.js?ts=<?=time()?>"></script>
+    <script src="../js/uncube.js?ts=<?=time()?>"></script>
 </body>
 
 </html>
