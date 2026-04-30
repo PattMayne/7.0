@@ -22,6 +22,9 @@ const img_draw_data = {
     height: canvas_desktop.height / 2
 }
 
+const phases = [1, 2, 3]
+let phase = phases[0]
+
 let fake_tilt = true
 const tilt = 0.2
 
@@ -30,16 +33,37 @@ let dotted_lines = false
 
 let conguy = new Image();
 
-conguy.src = guy_is_cool ? "./img/coolconguy.png" : "./img/conguy.png"
+const get_guy = () =>
+    phase == phases[0] ? "./img/coolconguy.png" :
+    phase == phases[2] ? "./img/ascendedguy.png" :
+    "./img/conguy.png"
 
-const switch_guy = () => {
-    guy_is_cool = !guy_is_cool
-    conguy.src = guy_is_cool ? "./img/coolconguy.png" : "./img/conguy.png"
-    dotted_lines = !dotted_lines
+conguy.src = get_guy()
+
+const cycle_guy = () => {
+    if (phase == phases[0]) {
+        // showing the guy's true (uncool) form
+        phase = phases[1]
+        guy_is_cool = false
+        conguy.src = get_guy()
+        dotted_lines = true
+    } else if (phase == phases[1]) {
+        // ascending the guy
+        phase = phases[2]
+        guy_is_cool = true
+        conguy.src = get_guy()
+        dotted_lines = false
+    } else {
+        // resetting the guy
+        phase = phases[0]
+        guy_is_cool = true
+        conguy.src = get_guy()
+        dotted_lines = false
+    }
 }
 
-canvas_desktop.addEventListener("click", switch_guy)
-canvas_mobile.addEventListener("click", switch_guy)
+canvas_desktop.addEventListener("click", cycle_guy)
+canvas_mobile.addEventListener("click", cycle_guy)
 
 const timeout = 60 // Timeout for animation update
 const f = 500  // Focal length for 3D projection (larger values make objects smaller)
@@ -137,14 +161,16 @@ class model {
             line(ctx, start.x, start.y, end.x, end.y) // Draw the line between the two points
         })
 
-        // draw face
-        ctx.drawImage(
-            conguy,
-            img_draw_data.x,
-            img_draw_data.y,
-            img_draw_data.width,
-            img_draw_data.height
-        )
+        if (phase != phases[2]) {
+            // draw face
+            ctx.drawImage(
+                conguy,
+                img_draw_data.x,
+                img_draw_data.y,
+                img_draw_data.width,
+                img_draw_data.height
+            )
+        }
 
         // Draw the edges in FRONT of the guy
         this.edges.forEach(this_edge => {
@@ -164,6 +190,19 @@ class model {
             })
             ctx.setLineDash([]); // Reset to solid line
         }
+
+        // Draw the guy's face on top of everything if he as ASCENDED
+        if (phase == phases[2]) {
+            // draw face
+            ctx.drawImage(
+                conguy,
+                img_draw_data.x,
+                img_draw_data.y,
+                img_draw_data.width,
+                img_draw_data.height
+            )
+        }
+
     }
 
     // Rotate the model around the X-axis
