@@ -29,23 +29,21 @@
                 <div class="overlay">
                     <!-- overlay content, e.g.: -->
                     <div>
-                    <h6 class="front-book-title orange_text" >
-                        <?php echo $title; ?>
-                    </h6>
+                        <h6 class="front-book-title orange_text" >
+                            <?php echo $title; ?>
+                        </h6>
 
-                    <div class="front_genres_box">
-
-                        <?php
-                            $genre_list = explode(",", $genres);
-                            // Show the links.
-                            foreach ($genre_list as $genre) {
-                                echo '<span class="genre_span">';
-                                echo $genre;
-                                echo '</span>';
-                            }
-                        ?>
-                    </div>
-
+                        <div class="front_genres_box">
+                            <?php
+                                $genre_list = explode(",", $genres);
+                                // Show the links.
+                                foreach ($genre_list as $genre) {
+                                    echo '<span class="front_genre_span">';
+                                    echo $genre;
+                                    echo '</span>';
+                                }
+                            ?>
+                        </div>
 
                     </div>
                 </div>

@@ -459,6 +459,18 @@ blockquote {
     padding: 0px;
 }
 
+.front_genre_span {
+    margin: 0px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    font-family: alte;
+    font-size: small;
+    display: inline-block;
+    background-color: #dfdfdf;
+    color: #000;
+    padding: 0px 4px;
+}
+
 .genre_span {
     margin: 0px;
     margin-right: 3px;
