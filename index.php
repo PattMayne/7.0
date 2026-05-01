@@ -157,7 +157,7 @@
 
             <!-- Now we put the BOOKS in a TWO-CELL div -->
 
-            <div class="large-9 medium-7 small-12 cell"> <!-- 3 -->
+            <div class="large-5 medium-5 small-12 cell"> <!-- 3 -->
 
                 <div class="grid-x grid-padding-x"> <!-- 4 -->
                     <div class="large-12 cell">
@@ -187,8 +187,6 @@ $genres;
 
 if (file_exists('./data/books.xml')) {
     $books_xml = simplexml_load_file('./data/books.xml');
-    $max_books_to_display = 4;
-    $books_displayed = 0;
 
     foreach ($books_xml->book as $book) {
 
@@ -208,14 +206,7 @@ if (file_exists('./data/books.xml')) {
         }
 
         // Data is ready. Render the book snippet.
-        include 'book.php';
-
-        // Limit the number of books on the front page
-        $books_displayed += 1;
-
-        if ($books_displayed >= 6) {
-            break;
-        }
+        include 'book_small.php';
     }
 
 } else {
@@ -233,7 +224,7 @@ if (file_exists('./data/books.xml')) {
             <!-- DO NOT CHANGE THE CONTENTS .. I'm manipulating it in JavaScript -->
             <div class="large-12 cell" id="more_books_link_container_container">
                 <div class="large-12 cell" id="more_books_link_container">
-                    <a href="/books" class="more_books_link"><h3 id="more_books">MORE BOOKS</h3></a>
+                    &nbsp;
                 </div>
             </div>
 

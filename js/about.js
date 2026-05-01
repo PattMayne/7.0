@@ -35,8 +35,10 @@ small_many_guys.addEventListener('click', switch_show_guys)
 const container = document.getElementById("front_books_grid")
 let book_items = Array.from(container.children)
 const getNumCols = width =>
-  width >= 1600 ? 3 :
-  width >= 1024 ? 2 : 1
+  width >= 1024 ? 4 :
+  width >= 640 ? 3 :
+  width >= 500 ? 4 :
+  width >= 420 ? 3 : 2
 
 const more_books_link_container = document.getElementById("more_books_link_container_container")
 const more_books_link = Array.from(more_books_link_container.children)[0]
@@ -53,12 +55,12 @@ const layoutGrid =() => {
   const columns = []
   for (let i = 0; i < num_cols; i++) {
     const col = document.createElement("div")
-    col.className = "column"
+    col.className = "front_books_column"
     columns.push(col)
     container.appendChild(col)
   }
 
-  const max_books = width >= 1600 ? 6 : 4
+  const max_books = book_items.length
 
   // Distribute items
   book_items.forEach((item, index) => {
