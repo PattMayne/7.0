@@ -17,17 +17,37 @@
         "large" => 4
     ]);
     
-    $title_heading_size = $page != 'single' ? 'h6' : 'h3';
-
 ?>
 
 
 
 <div>
     <div class="book-container">
-        <div class="book-details">
-
+        <div class="front-book-details">
             <img src="../img/<?php echo $image_filename; ?>" />
+            <div class="overlay">
+                <!-- overlay content, e.g.: -->
+                 <div>
+                <h6 class="front-book-title orange_text <?php if ($page == 'single') {echo ' solo-title-text';}  ?>" >
+                    <?php echo $title; ?>
+                </h6>
+
+                <div class="front_genres_box">
+
+                    <?php
+                        $genre_list = explode(",", $genres);
+                        // Show the links.
+                        foreach ($genre_list as $genre) {
+                            echo '<span class="genre_span">';
+                            echo $genre;
+                            echo '</span>';
+                        }
+                    ?>
+                 </div>
+
+
+                </div>
+            </div>
         </div>
     </div>
 

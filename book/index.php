@@ -33,7 +33,7 @@
         <?php include '../header.php'; ?>
 
         <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-8 small-12 cell">
+            <div class="large-5 medium-7 small-12 cell">
 
         <!-- BOOKS LIST (to go within the grid-x) -->
 
@@ -98,6 +98,9 @@ if (file_exists('../data/books.xml')) {
 
 
 ?>
+            </div>
+            <div class="large-12 cell">
+                <a href="/books"><h3 class="more_books_link">MORE BOOKS</h3></a>
             </div>
         <!-- END OF BOOKS LIST -->
 

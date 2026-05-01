@@ -348,10 +348,60 @@ blockquote {
     position: relative;
     min-height: 100%;
     width: 100%;
-
     padding-bottom: 0;
 }
 
+.front-book-details {
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: relative;
+    display: block; /* or block, as needed */
+}
+
+.front-book-details:hover {
+    cursor: pointer;
+}
+
+.front-book-details img {
+  display: block;
+  width: 100%; /* or a fixed width/height if you prefer */
+  height: auto;
+}
+
+.front-book-details .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9); /* semi-transparent overlay */
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;   /* optional: so overlay doesn't block mouse events */
+  transition: opacity 0.3s;
+}
+
+.front-book-title {
+  text-align: center;
+}
+
+.front-book-details:hover .overlay {
+  opacity: 1;
+  pointer-events: auto;   /* optional: only if you want clickable overlay */
+}
+
+.front_genres_box {    
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .book-details {
     height: 100%;
@@ -407,6 +457,7 @@ blockquote {
 .genre_span {
     margin: 0px;
     margin-right: 3px;
+    margin-bottom: 3px;
     font-family: alte;
     font-size: small;
     display: inline-block;
@@ -608,10 +659,14 @@ blockquote {
 }
 
 .more_books_link {
-    color: red;
+    color: #007ede;
     text-align: right;
     display: inline-block;
     width: auto;
+}
+
+.more_books_link:hover {
+    color: #de8200;
 }
 
 
