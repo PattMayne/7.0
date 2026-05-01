@@ -384,10 +384,15 @@ blockquote {
   opacity: 0;
   pointer-events: none;   /* optional: so overlay doesn't block mouse events */
   transition: opacity 0.3s;
+  z-index: 6;
 }
 
 .front-book-title {
   text-align: center;
+  pointer-events: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  z-index: 5;
 }
 
 .front-book-details:hover .overlay {

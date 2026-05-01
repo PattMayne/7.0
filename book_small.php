@@ -24,30 +24,32 @@
 <div>
     <div class="book-container">
         <div class="front-book-details">
-            <img src="../img/<?php echo $image_filename; ?>" />
-            <div class="overlay">
-                <!-- overlay content, e.g.: -->
-                 <div>
-                <h6 class="front-book-title orange_text <?php if ($page == 'single') {echo ' solo-title-text';}  ?>" >
-                    <?php echo $title; ?>
-                </h6>
+            <a href="/book/?slug=<?php echo $slug; ?>">
+                <img src="../img/<?php echo $image_filename; ?>" />
+                <div class="overlay">
+                    <!-- overlay content, e.g.: -->
+                    <div>
+                    <h6 class="front-book-title orange_text" >
+                        <?php echo $title; ?>
+                    </h6>
 
-                <div class="front_genres_box">
+                    <div class="front_genres_box">
 
-                    <?php
-                        $genre_list = explode(",", $genres);
-                        // Show the links.
-                        foreach ($genre_list as $genre) {
-                            echo '<span class="genre_span">';
-                            echo $genre;
-                            echo '</span>';
-                        }
-                    ?>
-                 </div>
+                        <?php
+                            $genre_list = explode(",", $genres);
+                            // Show the links.
+                            foreach ($genre_list as $genre) {
+                                echo '<span class="genre_span">';
+                                echo $genre;
+                                echo '</span>';
+                            }
+                        ?>
+                    </div>
 
 
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 

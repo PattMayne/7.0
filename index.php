@@ -197,6 +197,7 @@ if (file_exists('./data/books.xml')) {
         $description = $book->description;
         $raw_links = $book->links;
         $genres = $book->genres;
+        $slug = $book->slug;
         $links = array();
         foreach ($raw_links->link as $link) {
             $links[] = array(
