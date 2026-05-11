@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="main-wrapper"> <!-- main warapper UPDATED -->
+    <div class="main-wrapper"> <!-- main wrapper UPDATED -->
         
         <?php include 'header.php' ?>
 
