@@ -157,7 +157,7 @@
 
             <!-- Now we put the BOOKS in a TWO-CELL div -->
 
-            <div class="large-5 medium-5 small-12 cell"> <!-- 3 -->
+            <div class="large-5 medium-6 small-12 cell"> <!-- 3 -->
 
                 <div class="grid-x grid-padding-x"> <!-- 4 -->
                     <div class="large-12 cell">
