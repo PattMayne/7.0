@@ -209,9 +209,8 @@ if (file_exists('./data/books.xml')) {
         // Data is ready. Render the book snippet.
         include 'book_small.php';
     }
-
 } else {
-    exit('Failed to open ../data/books.xml.');
+    exit('Failed to open ../data/books.xml');
 }
 
 
