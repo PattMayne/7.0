@@ -290,6 +290,16 @@ blockquote {
     }
 }
 
+.podcast-callout {
+    display: inline-block;
+    width: 100%;
+}
+
+.podcast-img {
+    float: left;
+    width: 25%;
+    margin: 5px 7px 2px 0px;
+}
 
 
 .music-img {

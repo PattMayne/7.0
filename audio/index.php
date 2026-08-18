@@ -79,12 +79,12 @@ if (file_exists('../data/audio.xml')) {
 
 <?php
 
-    //  ALBUMS
+    //  PODCASTS
 
     /*
         Declare global variables for data.
         We will loop through XML data, fill each variable,
-        include (render) the album HTML snippet,
+        include (render) the podcast HTML snippet,
         then hit the next album and override all the data.
     */
 
@@ -92,6 +92,7 @@ $podcast_title;
 $podcast_description;
 $podcast_link_url;
 $podcast_link_text;
+$podcast_image_filename;
 
 
 $podcasts_xml = $audio_xml->podcasts;
@@ -104,6 +105,7 @@ foreach ($podcasts_xml->podcast as $podcast) {
     $podcast_description = $podcast->description;
     $podcast_link_url = $podcast->link_url;
     $podcast_link_text = $podcast->link_text;
+    $podcast_image_filename = $podcast->image_filename;
 
     // Data is ready. Render the book snippet.
     include '../podcast.php';

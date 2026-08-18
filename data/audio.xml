@@ -25,7 +25,16 @@
     <podcasts>
 
         <podcast>
+            <title>The Canadian Civil War Podcast</title>
+            <image_filename>ccw_podcast.png</image_filename>
+            <description>Interviews with Canadian artists, among other things.</description>
+            <link_url>https://pnc.st/s/canadian-civil-war</link_url>
+            <link_text>Feed Link</link_text>
+        </podcast>
+
+        <podcast>
             <title>The Righteous Podcast of Truth</title>
+            <image_filename></image_filename>
             <description>Scripted comedy podcast. Fictional stories and nonsense.</description>
             <link_url>https://the-righteous-podcast-of-truth.pinecast.co/</link_url>
             <link_text>Links</link_text>
@@ -33,6 +42,7 @@
 
         <podcast>
             <title>The Robot God Cast</title>
+            <image_filename></image_filename>
             <description>Interviews about technology. I think we worship technology and the future. I used to try to talk to people about it, but then I had to get a real job.</description>
             <link_url>https://www.youtube.com/watch?v=Cj8UMWGnWqw&amp;list=PL9Q6kzTdCn4ZwqHWjaCeQEsKsGuymEw8g&amp;index=2</link_url>
             <link_text>YouTube</link_text>
