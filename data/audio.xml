@@ -34,7 +34,7 @@
 
         <podcast>
             <title>The Righteous Podcast of Truth</title>
-            <image_filename></image_filename>
+            <image_filename>rpot_cover.jpg</image_filename>
             <description>Scripted comedy podcast. Fictional stories and nonsense.</description>
             <link_url>https://the-righteous-podcast-of-truth.pinecast.co/</link_url>
             <link_text>Links</link_text>
