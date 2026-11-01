@@ -5,9 +5,11 @@ var smallPanels
 var buyButtons
 var showButtonsButton
 var showHideButton
+var has_clicked_show_button = false
 
 function start() {
     console.log("Hello")
+    has_clicked_show_button = false
     sixPanels = document.getElementsByClassName("one_of_six")
     smallPanels = document.getElementsByClassName("small_picture_panel")
     buyButtons = document.getElementsByClassName("buy_button_left")
@@ -20,6 +22,7 @@ function start() {
 }
 
 function show_hide_bio() {
+    has_clicked_show_button = true
     var restOfBio = document.getElementById("hide_first")
     if (restOfBio.style.display == "none") {
         restOfBio.style.display = ""
@@ -28,7 +31,6 @@ function show_hide_bio() {
         restOfBio.style.display = "none"
         showHideButton.innerHTML = "MORE"
     }
-    console.log("showing hiding bio")
 }
 
 function setPanelSizes() {
@@ -52,9 +54,11 @@ function setButtonVisibility() {
 
     var restOfBio = document.getElementById("hide_first")
     if (window.innerWidth < 1020) {
-        restOfBio.style.display = "none"
+        if (!has_clicked_show_button) {
+            restOfBio.style.display = "none"
+        }
         showHideButton.style.display = ""
-        showHideButton.innerHTML = "MORE"
+        showHideButton.innerHTML = restOfBio.style.display == "none" ? "MORE" : "LESS"
     } else {
         restOfBio.style.display = ""
         showHideButton.innerHTML = "LESS"
@@ -85,6 +89,5 @@ document.onload = start()
 window.addEventListener('resize', () => {
     setPanelSizes()
     setButtonVisibility()
-
 })
 

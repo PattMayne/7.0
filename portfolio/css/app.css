@@ -37,7 +37,7 @@
 /*      element overrides    */
 
 body {
-    background-color: #f6f6f6;
+    background-color: #d7d7d7;
     color: #111111;
 }
 
@@ -101,7 +101,7 @@ p {
 }
 
 .primary {
-    background-color: #f6f6f6;
+    background-color: #ab9595!important;
     color: #111111;
 }
 
@@ -296,9 +296,13 @@ p {
 }
 
 .item_text{
-    font-size: 0.9rem;
-    margin: 6px;
+    font-size: 1rem;
+    margin: 12px;
     text-align: center;
+
+    @media (min-width: 1120px) {
+        font-size: 1.4rem;
+    }
 }
 
 .item_logo {
@@ -306,7 +310,7 @@ p {
 }
 
 .item_title {
-    font-size: clamp(1.5rem, 3cqw, 2rem);
+    font-size: clamp(1.3rem, 3cqw, 2rem);
     text-align: center;
 }
 
@@ -353,7 +357,9 @@ p {
     color: #111111;
 }
 
-
+.mid_small_panel {
+    margin-bottom: 16px;
+}
 
 /* .cell {
     border: 1px dotted blue;
@@ -391,6 +397,38 @@ p {
 #star-panel {
     background-image: url(../pic/stars.jpg);
     background-position: center top;
+}
+
+#blue-panel {
+    background-color: #676e90;
+    background-image: none;
+}
+
+#dark-blue-panel {
+    background-color: #1d1f2b;
+    background-image: none;
+}
+
+#blue-panel {
+    background-color: #676e90;
+    background-image: none;
+}
+
+
+#orange-panel {
+    background-color: #904c25;
+    background-image: none;
+}
+
+
+#field-panel {
+    background-image: url(../pic/field.jpg);
+    background-position: center;
+}
+
+#duck-panel {
+    background-image: url(../pic/duck.jpg);
+    background-position: center;
 }
 
 
