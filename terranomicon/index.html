@@ -1,0 +1,244 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERRANOMICON</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" href="pic/robicon.png" type="image/x-icon" />
+</head>
+
+<body>
+
+    <!-- Universal -->
+    <div class="grid-x grid-padding-x">
+        <div class="large-6 cell title-cell">
+            <h1>TERRANOMICON</h1>
+            <h6><a class="blackText" target="blank" href="https://pattmayne.com">A novel by Matt Payne</a></h6>
+        </div>
+
+        <div class="large-6 cell subtitle-cell">
+            <h4 class="red">AN INSANE CYBORG ADVENTURE</h4>
+            <h6>EXPLORING TECHNOLOGY, VIOLENCE, AND HUMAN STRIVING.</h6>
+        </div>
+
+        <div class="large-3 medium-12 small-12 cell">
+            <div class="left_panel">
+                <a class="button panel_button" id="show_buy_button_left_button" href="#" onclick="showBuyButtons()">
+                    GET THE BOOK
+                </a>
+                <a class="button panel_button buy_button_left" href="#" data-open="paperbackModal">PAPERBACK</a>
+                <a class="button panel_button buy_button_left" href="#" data-open="ebookModal">E-BOOK</a>
+                <a class="button panel_button buy_button_left" href="#" data-open="audiobookModal">AUDIOBOOK</a>
+            </div>
+
+            <div class="grid-x grid-padding-x show-for-small-only">
+
+                <div class="small-4 cell">
+                    <div class="small_picture_panel" id="sm-robot-panel">&nbsp;</div>
+                </div>
+
+                <div class="small-4 cell">
+                    <div class="small_picture_panel" id="sm-zombie-panel">&nbsp;</div>
+                </div>
+
+                <div class="small-4 cell">
+                    <div class="small_picture_panel" id="sm-third-panel">&nbsp;</div>
+                </div>
+
+            </div>
+
+            <p class="sideText">
+                Michael and Forest declare a fight to the death, and give each other one year to plan.
+            </p>
+            <p class="sideText">
+                Alonso is a paralyzed billionaire who invents cyborg bodies to share with other disabled people. But his
+                machines fuel an arms race between Michael and Forest. Their war changes the world.
+            </p>
+            <p class="sideText hide-for-small-only">
+                A rogue AI declares war on itself, and wages its battles in the cosmos. Armed with cyborg technology,
+                this software seeks to become god by destroying reality.
+            </p>
+
+            <p class="sideText hide-for-small-only">
+                A research team develops encyclopedic knowledge to transform planets and species. Their work is torn
+                apart by love and betrayal, fused together by war.</p>
+            <p class="sideText hide-for-small-only">
+                Massive cyborg battles decide the fate of humanity, and possibly the nature of reality.</p>
+
+        </div>
+
+
+
+        <!-- text/description here -->
+
+        <div class="large-9 medium-12 small-12 cell flush_top">
+            <div class="grid-x grid-padding-x flush_top">
+
+                <!-- first column -->
+                <!-- This column should disappear on small,
+                    but its first video should then appear in the second column-->
+                <div class="large-6 medium-6 small-12 cell hide-for-small-only">
+
+                    <div class="callout picture_panel one_of_six" id="robot-panel">&nbsp;</div>
+                    <div class="picture_panel one_of_six" id="third-panel">&nbsp;</div>
+
+                </div>
+
+                <!-- second column -->
+                <div class="large-6 medium-6 small-12 cell hide-for-small-only">
+
+                    <div class=" picture_panel one_of_six hide-for-small-only" id="zombie-panel">&nbsp;</div>
+                    <div class=" picture_panel one_of_six hide-for-small-only" id="run-panel">&nbsp;</div>
+
+                </div>
+
+                <div class="large-12 cell flush_top hide-for-small-only">
+                    <div class="bottom_panel">
+                        <a class="button panel_button buy_button_bottom" href="#" data-open="paperbackModal">
+                            PAPERBACK
+                        </a>
+                        <a class="button panel_button buy_button_bottom" href="#" data-open="ebookModal">
+                            E-BOOK
+                        </a>
+                        <a class="button panel_button buy_button_bottom" href="#" data-open="audiobookModal">
+                            AUDIOBOOK
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Buy call-to-action moadals -->
+
+    <div id="paperbackModal" class="reveal" data-reveal>
+        <h2 id="modalTitle">PAPERBACK</h2>
+        <div class="modal_cover_container">
+            <img src="pic/terrapromocover.png" class="modal_cover_pb" />
+        </div>
+
+        <div class="grid-x grid-padding-x grid-padding-y">
+
+            <div class="large-6 medium-6 small-6 cell">
+                <a class="modal_button" href="https://www.amazon.ca/Terranomicon-Matt-Payne/dp/B0DJRKD9TN/ref=tmm_pap_swatch_0" target="new">
+                    AMAZON (ca)</a>
+            </div>
+
+            <div class="large-6 medium-6 small-6 cell">
+                <a class="modal_button" href="https://www.amazon.com/Terranomicon-Matt-Payne/dp/B0DJRKD9TN/ref=tmm_pap_swatch_0" target="new">
+                    AMAZON (us)</a>
+            </div>
+        </div>
+
+
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div id="ebookModal" aria-labelledby="ebook" aria-hidden="true" role="dialog" class="reveal" data-reveal>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 id="modalTitle">EBOOK</h2>
+
+        <div class="modal_cover_container">
+            <img src="pic/terrapromocover.png" class="modal_cover_pb" />
+        </div>
+
+        <!-- button links out of town to buy the book -->
+
+
+        <div class="grid-x grid-padding-x grid-padding-y">
+
+            <div class="large-6 medium-6 small-6 cell">
+                <a class="modal_button" href="https://www.kobo.com/ca/en/ebook/terranomicon" target="new">
+                    KOBO</a>
+            </div>
+            <div class="large-6 medium-6 small-6 cell">
+                <a class="modal_button" href="https://www.amazon.ca/Terranomicon-Matt-Payne-ebook/dp/B0DJLFDJTW/"
+                    target="new">
+                    AMAZON (ca)</a>
+            </div>
+
+            <div class="large-6 medium-6 small-6 cell">
+                <a class="modal_button" href="https://www.amazon.com/Terranomicon-Matt-Payne-ebook/dp/B0DJLFDJTW/"
+                    target="new">
+                    AMAZON (us)</a>
+            </div>
+            <div class="large-6 medium-6 small-6 cell">
+                <a class="modal_button" href="https://draft2digital.com/book/2322434" target="new">DRAFT2DIGITAL</a>
+            </div>
+            <div class="large-6 medium-6 small-6 cell">
+                <a class="modal_button" href="https://books.apple.com/us/book/terranomicon/id6736672057"
+                    target="new">APPLE BOOKS</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="audiobookModal" aria-labelledby="Paperback" aria-hidden="true" role="dialog" class="reveal" data-reveal>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 id="modalTitle">AUDIOBOOK</h2>
+
+        <div class="modal_cover_container">
+            <img src="pic/terraaudiocover.png" class="modal_cover_pb" />
+        </div>
+
+        <div class="grid-x grid-padding-x grid-padding-y">
+
+            <div class="large-6 medium-6 small-6 cell">
+                <a class="modal_button" href="https://books.apple.com/us/audiobook/terranomicon/id1773468269"
+                    target="new">
+                    APPLE BOOKS</a>
+            </div>
+
+            <div class="large-6 medium-6 small-6 cell">
+                <a class="modal_button" href="https://pattmayne.bandcamp.com/album/terranomicon-audiobook" target="new">
+                    BANDCAMP</a>
+            </div>
+
+            <div class="large-6 medium-6 small-6 cell">
+                <a class="modal_button" href="https://libro.fm/audiobooks/9798882392931" target="new">
+                    LIBRO.fm</a>
+            </div>
+
+
+            <div class="large-6 medium-6 small-6 cell">
+                <a class="modal_button" href="https://www.amazon.com/Audible-Terranomicon/dp/B0DKGCW71F/" target="new">
+                    AMAZON (us)</a>
+            </div>
+            <div class="large-6 medium-6 small-6 cell">
+                <a class="modal_button" href="https://www.amazon.ca/Audible-Terranomicon/dp/B0DKGC5TMG/" target="new">
+                    AMAZON (ca)</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+
+</html>
