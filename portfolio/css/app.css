@@ -258,6 +258,13 @@ p {
 
 .sideText {
     text-align: left;
+    @media (min-width: 1550px) {
+        font-size: 1.1rem;
+    }
+
+    @media (min-width: 1920px) {
+        font-size: 1.8rem;
+    }
 }
 
 
