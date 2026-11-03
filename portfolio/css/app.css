@@ -333,6 +333,16 @@ p {
     @media (min-width: 1920px) {
         font-size: 1.6rem;
     }
+
+
+    @media (max-width: 640px) {
+        font-size: 1.2rem;
+    }
+
+
+    @media (max-width: 460px) {
+        font-size: 1.0rem;
+    }
 }
 
 .item_logo {
