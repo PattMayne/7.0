@@ -72,6 +72,11 @@ p {
     padding-bottom: 3px;
 
     @media (min-width: 1600px) {
+        font-size: 1.15rem;
+        padding-bottom: 4px;
+    }
+
+    @media (min-width: 1920px) {
         font-size: 1.3rem;
         padding-bottom: 4px;
     }
