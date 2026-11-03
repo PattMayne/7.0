@@ -71,7 +71,7 @@ p {
     padding-top: 4px;
     padding-bottom: 3px;
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1600px) {
         font-size: 1.3rem;
         padding-bottom: 4px;
     }
