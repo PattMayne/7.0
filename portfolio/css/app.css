@@ -331,6 +331,13 @@ p {
 
 .item_title_big {
     text-align: center;
+    @media (min-width: 1550px) {
+        font-size: 3.7rem;
+    }
+
+    @media (min-width: 1920px) {
+        font-size: 5rem;
+    }
 }
 
 .pcell_left {
