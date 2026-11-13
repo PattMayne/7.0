@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMzed</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+<body>
+
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="large-12 cell">
+          <h1>KMzed</h1>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div class="callout">
+            <h3>Upload a KMZ or KML file to generate a CSV file of the same data. </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="large-8 medium-8 small-12 cell">
+
+          <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
+              <div class="callout">
+                <p>Upload a KMZ or KML file to generate a CSV file of the same data.</p>
+
+                <form>
+                  <div class="grid-x grid-padding-x">
+
+                      <div class="large-6 medium-6 small-12 cell">
+                        <label>File Upload</label>
+                        <div class="input-group">
+                          <input type="file" accept=".kmz,.kml" class="input-group-field" />
+                          <span class="input-group-label">KMZ or KML</span>
+                        </div>
+                      </div>
+
+                      <div class="large-6 medium-6 small-12 cell">
+                        <label>&nbsp;</label>
+                        <a class="button small" id="convert_btn">CONVERT</a>
+                      </div>
+
+                      <div class="large-12 cell" id="save_container">
+                        <hr/>
+                        <a class="button small" id="save_btn">SAVE CSV</a>
+                      </div>
+                    
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="large-4 medium-4 small-12 cell">
+          <div class="callout primary">
+            <h5>Status</h5>
+            <div class="callout">
+              <p id="status">Load a KMZ or KML file and press CONVERT.</p></div>
+          </div>
+      </div>
+    </div>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/jszip.js"></script>
+    <script src="js/app.js?id=1"></script>
+  </body>
+</html>
