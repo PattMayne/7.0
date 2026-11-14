@@ -27,6 +27,15 @@
       </div>
 
       <div class="grid-x grid-padding-x">
+
+        <div class="large-4 medium-4 small-12 cell">
+          <div class="callout primary">
+            <h5>Status</h5>
+            <div class="callout">
+              <p id="status">Load a KMZ or KML file and press CONVERT.</p></div>
+          </div>
+        </div>
+
         <div class="large-8 medium-8 small-12 cell">
 
           <div class="grid-x grid-padding-x">
@@ -50,6 +59,12 @@
                         <a class="button small" id="convert_btn">CONVERT</a>
                       </div>
 
+                      <div class="large-12 cell">
+                        <label>Custom Fields Only
+                          <input type="checkbox" id="custom_fields_only" value="custom_fields_only" checked />
+                        </label>
+                      </div>
+
                       <div class="large-12 cell" id="save_container">
                         <hr/>
                         <a class="button small" id="save_btn">SAVE CSV</a>
@@ -63,13 +78,6 @@
           </div>
 
         </div>
-        <div class="large-4 medium-4 small-12 cell">
-          <div class="callout primary">
-            <h5>Status</h5>
-            <div class="callout">
-              <p id="status">Load a KMZ or KML file and press CONVERT.</p></div>
-          </div>
-      </div>
     </div>
 
 
@@ -77,6 +85,6 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/jszip.js"></script>
-    <script src="js/app.js?id=1"></script>
+    <script src="js/app.js?id=10"></script>
   </body>
 </html>

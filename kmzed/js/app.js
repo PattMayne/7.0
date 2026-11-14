@@ -4,6 +4,8 @@ const convertButton = document.querySelector('#convert_btn')
 const saveButton = document.querySelector('#save_btn')
 const saveContainer = document.querySelector('#save_container')
 const statusElement = document.querySelector('#status')
+const customFieldsCheckbox = document.querySelector('#custom_fields_only')
+let customFieldsEnabled = () => customFieldsCheckbox.checked
 
 const MAX_UPLOAD_BYTES = 25 * 1024 * 1024
 const MAX_KML_BYTES = 50 * 1024 * 1024
@@ -43,18 +45,25 @@ const BASE_COLUMNS = [
   'style_url'
 ]
 
+const CUSTOM_BASE_COLUMNS = [
+  'name'
+]
+
 let busy = false
 let csvBlob = null
 let csvFilename = ''
+
 
 const setStatus = message => {
   statusElement.textContent = message
 }
 
+
 const resetResult = () => {
   csvBlob = null
   saveContainer.style.display = 'none'
 }
+
 
 const setBusy = value => {
   busy = value
@@ -63,9 +72,11 @@ const setBusy = value => {
   convertButton.textContent = value ? 'CONVERTING…' : 'CONVERT'
 }
 
+
 const fail = message => {
   throw new Error(message)
 }
+
 
 // Only read actual KML elements, not similarly named custom XML.
 const isKmlElement = element =>
@@ -76,13 +87,16 @@ const childrenNamed = (element, name) =>
     child.localName === name && isKmlElement(child)
   )
 
+
 const childNamed = (element, name) =>
   childrenNamed(element, name)[0]
+
 
 const descendantsNamed = (element, name) =>
   [...element.getElementsByTagName('*')].filter(child =>
     child.localName === name && isKmlElement(child)
   )
+
 
 const childText = (element, name) =>
   childNamed(element, name)?.textContent.trim() ?? ''
@@ -92,6 +106,7 @@ const nestedText = (element, parentName, name) => {
 
   return parent ? childText(parent, name) : ''
 }
+
 
 const getLayer = placemark => {
   const names = []
@@ -113,6 +128,7 @@ const getLayer = placemark => {
   return names.join(' / ')
 }
 
+
 const getCustomFields = placemark => {
   const extendedData = childNamed(placemark, 'ExtendedData')
 
@@ -131,7 +147,7 @@ const getCustomFields = placemark => {
 
   // Keep repeated fields instead of silently overwriting them.
   return entries
-    .filter(([name]) => name)
+    .filter(([name]) => nameIsOkay(name))
     .reduce((fields, [name, value]) => {
       const key = `custom:${name}`
 
@@ -142,6 +158,17 @@ const getCustomFields = placemark => {
       return fields
     }, {})
 }
+
+
+const nameIsOkay = name => {
+  if (customFieldsEnabled && name.includes('Location')) {
+    return false
+  }
+
+  // Avoid names that look like formulas or CSV injection.
+  return !/^\s*[=+\-@]/.test(name)
+}
+
 
 const parseCoordinate = tuple => {
   const parts = tuple.split(',')
@@ -170,6 +197,7 @@ const parseCoordinate = tuple => {
   return values
 }
 
+
 const validateCoordinates = placemark => {
   descendantsNamed(placemark, 'coordinates').forEach(element => {
     const text = element.textContent.trim()
@@ -188,6 +216,7 @@ const validateCoordinates = placemark => {
   })
 }
 
+
 const placemarkToRow = (placemark, sourceName) => {
   validateCoordinates(placemark)
 
@@ -198,6 +227,7 @@ const placemarkToRow = (placemark, sourceName) => {
       element.namespaceURI === 'http://www.google.com/kml/ext/2.2'
     )
   )
+
 
   // Separate latitude/longitude columns apply only to a simple Point.
   const point = geometries.length === 1 &&
@@ -216,9 +246,12 @@ const placemarkToRow = (placemark, sourceName) => {
 
   const serializer = new XMLSerializer()
 
-  return {
-    source_kml: sourceName,
-    id: placemark.getAttribute('id') ?? '',
+
+
+  return customFieldsEnabled ? {
+      name: childText(placemark, 'name'),
+    ...getCustomFields(placemark)
+  } : {
     name: childText(placemark, 'name'),
     description: childText(placemark, 'description'),
     layer: getLayer(placemark),
@@ -237,7 +270,7 @@ const placemarkToRow = (placemark, sourceName) => {
     end: nestedText(placemark, 'TimeSpan', 'end'),
     style_url: childText(placemark, 'styleUrl'),
     ...getCustomFields(placemark)
-  }
+  } 
 }
 
 const parseKml = ({ name, text }) => {
@@ -345,12 +378,16 @@ const readDocuments = async file => {
 const escapeCsv = value => {
   const text = String(value ?? '')
 
-  // Keep numeric coordinates numeric, but neutralize text that
-  // spreadsheet software might interpret as a formula.
-  const safeText = typeof value === 'string' &&
+  const isNumericText =
+    /^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?$/.test(text) &&
+    Number.isFinite(Number(text))
+
+  const needsProtection =
+    typeof value === 'string' &&
+    !isNumericText &&
     (/^\s*[=+\-@]/.test(text) || /^[\t\r\n]/.test(text))
-      ? `'${text}`
-      : text
+
+  const safeText = needsProtection ? `'${text}` : text
 
   return `"${safeText.replace(/"/g, '""')}"`
 }
@@ -362,7 +399,9 @@ const generateCsv = rows => {
     )
   )].sort()
 
-  const columns = [...BASE_COLUMNS, ...customColumns]
+  const columns = customFieldsEnabled
+    ? [...CUSTOM_BASE_COLUMNS, ...customColumns]
+    : [...BASE_COLUMNS, ...customColumns]
 
   return [
     columns.map(escapeCsv).join(','),
@@ -375,6 +414,8 @@ const generateCsv = rows => {
 const convert = async event => {
   event.preventDefault()
   if (busy) return
+
+  customFieldsEnabled = customFieldsCheckbox.checked
 
   resetResult()
   setBusy(true)
